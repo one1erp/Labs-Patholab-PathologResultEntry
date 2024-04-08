@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C27008E-5163-4F3A-803A-6CB85F1C77B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PathologResultEntry</RootNamespace>
+    <AssemblyName>PathologResultEntry</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\DLLS\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\DLLS\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalReportsV1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\CrystalReportsV1.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\Patholab_DAL_V1\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtraMaterialControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\ExtraMaterialControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.LSSERVICEPROVIDERLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Program Files (x86)\Thermo\Nautilus\Interop.LSSERVICEPROVIDERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NautToEytan, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\NautToEytan.dll</HintPath>
+    </Reference>
+    <Reference Include="ONE1_richTextCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\ONE1_richTextCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="PacsDigital, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\PacsDigital.dll</HintPath>
+    </Reference>
+    <Reference Include="Patholab_Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Patholab_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Patholab_XmlService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Patholab_XmlService.dll</HintPath>
+    </Reference>
+    <Reference Include="PathologDiagnosis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\PathologDiagnosis.dll</HintPath>
+    </Reference>
+    <Reference Include="PortalAssuta, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\PortalAssuta.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PreviewLetter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\PreviewLetter.dll</HintPath>
+    </Reference>
+    <Reference Include="Properties.Resources.Designer.cs">
+      <HintPath>..\..\ONE1_richTextCtrl\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll</HintPath>
+    </Reference>
+    <Reference Include="RequestRemarkNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\RequestRemarkNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SdgAttachments, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\SdgAttachments.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\BKP TELERIK\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\BKP TELERIK\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\BKP TELERIK\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\BKP TELERIK\TelerikCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikData, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\TelerikData.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikExport, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\TelerikExport.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AdviseRequest.cs" />
+    <Compile Include="Controls\AuthorizePopUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AuthorizePopUpForm.Designer.cs">
+      <DependentUpon>AuthorizePopUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Extra_req_Entities\ColNum.cs" />
+    <Compile Include="Controls\Extra_req_Entities\Advisor.cs" />
+    <Compile Include="Controls\Extra_req_Entities\BlockWrapper.cs" />
+    <Compile Include="Controls\Extra_req_Entities\DigitPatholog.cs" />
+    <Compile Include="Controls\FrmColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\FrmColor.Designer.cs">
+      <DependentUpon>FrmColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExtraRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ExtraRequest.Designer.cs">
+      <DependentUpon>ExtraRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Extra_req_Entities\ExWrapper.cs" />
+    <Compile Include="Controls\HistoryCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HistoryCtl.Designer.cs">
+      <DependentUpon>HistoryCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Rescan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Rescan.Designer.cs">
+      <DependentUpon>Rescan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SendToAdvisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SendToAdvisor.Designer.cs">
+      <DependentUpon>SendToAdvisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextTemplateCtrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\TextTemplateCtrl.Designer.cs">
+      <DependentUpon>TextTemplateCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClientFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClientFrm.Designer.cs">
+      <DependentUpon>EditClientFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFilter.Designer.cs">
+      <DependentUpon>FormFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PathologResultEntryCls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PathologResultEntryCls.Designer.cs">
+      <DependentUpon>PathologResultEntryCls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PdfViewerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfViewerFrm.Designer.cs">
+      <DependentUpon>PdfViewerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RTF Manger.cs" />
+    <Compile Include="WRAPPER_RTF.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AuthorizePopUpForm.resx">
+      <DependentUpon>AuthorizePopUpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FrmColor.resx">
+      <DependentUpon>FrmColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ExtraRequest.resx">
+      <DependentUpon>ExtraRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HistoryCtl.resx">
+      <DependentUpon>HistoryCtl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Rescan.resx">
+      <DependentUpon>Rescan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SendToAdvisor.resx">
+      <DependentUpon>SendToAdvisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextTemplateCtrl.resx">
+      <DependentUpon>TextTemplateCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClientFrm.resx">
+      <DependentUpon>EditClientFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFilter.resx">
+      <DependentUpon>FormFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathologResultEntryCls.resx">
+      <DependentUpon>PathologResultEntryCls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfViewerFrm.resx">
+      <DependentUpon>PdfViewerFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="LSEXT">
+      <Guid>{FBC86965-B117-11D2-9B57-006008777507}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="LSExtensionWindowLib">
+      <Guid>{4C2C51C1-130B-4F41-9D7E-00F67528DB72}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBRUN">
+      <Guid>{EA544A21-C82D-11D1-A3E4-00A0C90AEA82}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>9</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\PathologResultEntry.Controls.ColNum.datasource" />
+    <None Include="Properties\DataSources\PathologResultEntry.Controls.MoreActionsCtrl.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\678092-sign-add-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDF_file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdgu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-an-red-cross-x-on-transparent-background-696269911.jpg" />
+    <None Include="Resources\aliqCancel.png" />
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\חץ.jpg" />
+    <None Include="Resources\Printer.ico" />
+    <None Include="Resources\QC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdgu1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cancel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\v1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portalWorking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portalTransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extraDocuments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Patholab_DAL_V1\Patholab_DAL_V1\Patholab_DAL_V1.csproj">
+      <Project>{654b85ea-0add-42ad-aa0a-fae4cb001f97}</Project>
+      <Name>Patholab_DAL_V1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
