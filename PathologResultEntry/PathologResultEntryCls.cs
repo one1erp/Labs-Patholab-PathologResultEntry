@@ -72,6 +72,14 @@ namespace PathologResultEntry
         public PathologResultEntryCls()
         {
             InitializeComponent();
+            historyCtl = new HistoryCtl
+            {
+                Location = new Point(0, 9),
+                Margin = new Padding(6),
+                Name = "historyCtl",
+                Size = new Size(270, 760)
+            };
+            this.tabhistor.Controls.Add(historyCtl);
 
 
             BackColor = Color.FromName("Control");
@@ -109,6 +117,7 @@ namespace PathologResultEntry
         string _currentUserFullName;
         long _SessionId;
         long _currentUserid;
+        HistoryCtl historyCtl;
         /// <summary>
         /// From wf RE extension
         /// </summary>
@@ -1666,6 +1675,7 @@ namespace PathologResultEntry
 
         ReportDocument CR;
         bool IsProxy = false;
+
         public void RunReport(long sdg_id)
         {
             try

@@ -9,13 +9,13 @@ using Patholab_DAL_V1;
 using System.IO;
 using Telerik.WinControls;
 using Telerik.WinControls.UI;
-using Patholab_XmlService;
 using LSSERVICEPROVIDERLib;
 using System.Text.RegularExpressions;
 using PathologResultEntry.Controls.Extra_req_Entities;
 using Patholab_Common;
 using Patholab_DAL_V1.Enums;
 using System.Diagnostics;
+using Patholab_XmlService;
 
 namespace PathologResultEntry.Controls
 {
@@ -72,11 +72,11 @@ namespace PathologResultEntry.Controls
             FindCurrentAdvisor();
             if (existsOpenConsultation)
             {
-                radLabelDoct.Text = currentAdvisorName;
+                lblOpName.Text = currentAdvisorName;
             }
             else
             {
-                radLabelDoct.Text = _sdg.SDG_USER.U_PATHOLOG == null ? userName : _sdg.SDG_USER.PATHOLOG.NAME;
+                lblOpName.Text = _sdg.SDG_USER.U_PATHOLOG == null ? userName : _sdg.SDG_USER.PATHOLOG.NAME;
             }
 
             exrqstatusList = dal.GetPhraseByName("Extra Request Status").PhraseEntriesDictonary;

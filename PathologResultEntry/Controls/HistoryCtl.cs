@@ -1,29 +1,12 @@
-﻿using LSExtensionWindowLib;
-using LSSERVICEPROVIDERLib;
-using PathologResultEntry.Controls;
-using Patholab_Common;
-using PathologDiagnosis;
-using Patholab_DAL_V1;
-using Patholab_DAL_V1.Enums;
-using Patholab_XmlService;
+﻿using Patholab_DAL_V1;
+using PreviewLetter;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Telerik.WinControls.Primitives;
 using Telerik.WinControls.UI;
-using Path = System.IO.Path;
 using Timer = System.Windows.Forms.Timer;
-using HostUserControl;
-
-
-using CrystalDecisions.CrystalReports.Engine;
-using System.IO;
-using CrystalDecisions.Shared;
-using System.ComponentModel;
-using PreviewLetter;
 
 
 
@@ -35,13 +18,6 @@ namespace PathologResultEntry.Controls
         const string Medical_Title="אין הסטוריה במדיקל";
         public event Action<string> ItemSelected;
 
-
-        //---- oriya
-        //SDG_DETAILS sdgDetails;
-        private DataLayer _dal;
-        private Timer _bckgrndSaver;
-        PreviewLetterCls PreviewLetter;
-        //----
 
         public HistoryCtl()
         {

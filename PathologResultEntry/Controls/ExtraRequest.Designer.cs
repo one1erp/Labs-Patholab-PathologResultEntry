@@ -34,29 +34,28 @@ namespace PathologResultEntry.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn3 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn4 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.sdgTree = new Telerik.WinControls.UI.RadTreeView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radTextBoxRemarks = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabelDoct = new Telerik.WinControls.UI.RadLabel();
             this.lblMessage = new Telerik.WinControls.UI.RadLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_addColors = new System.Windows.Forms.Button();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.gridBlocks = new Telerik.WinControls.UI.RadGridView();
+            this.lblOpName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sdgTree)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBoxRemarks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabelDoct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblMessage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBlocks)).BeginInit();
@@ -87,9 +86,9 @@ namespace PathologResultEntry.Controls
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.lblOpName);
             this.panel1.Controls.Add(this.radLabel2);
             this.panel1.Controls.Add(this.radTextBoxRemarks);
-            this.panel1.Controls.Add(this.radLabelDoct);
             this.panel1.Controls.Add(this.lblMessage);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_addColors);
@@ -114,7 +113,7 @@ namespace PathologResultEntry.Controls
             // 
             this.radLabel2.RootElement.AccessibleDescription = null;
             this.radLabel2.RootElement.AccessibleName = null;
-            this.radLabel2.RootElement.ControlBounds = new System.Drawing.Rectangle(59, 125, 125, 22);
+            this.radLabel2.RootElement.ControlBounds = new System.Drawing.Rectangle(79, 154, 125, 22);
             this.radLabel2.Size = new System.Drawing.Size(87, 33);
             this.radLabel2.TabIndex = 30;
             this.radLabel2.Text = "הערות";
@@ -124,7 +123,7 @@ namespace PathologResultEntry.Controls
             this.radTextBoxRemarks.AutoSize = false;
             this.radTextBoxRemarks.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.radTextBoxRemarks.Location = new System.Drawing.Point(19, 199);
-            this.radTextBoxRemarks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radTextBoxRemarks.Margin = new System.Windows.Forms.Padding(4);
             this.radTextBoxRemarks.Multiline = true;
             this.radTextBoxRemarks.Name = "radTextBoxRemarks";
             // 
@@ -132,26 +131,9 @@ namespace PathologResultEntry.Controls
             // 
             this.radTextBoxRemarks.RootElement.AccessibleDescription = null;
             this.radTextBoxRemarks.RootElement.AccessibleName = null;
-            this.radTextBoxRemarks.RootElement.ControlBounds = new System.Drawing.Rectangle(14, 162, 125, 25);
+            this.radTextBoxRemarks.RootElement.ControlBounds = new System.Drawing.Rectangle(19, 199, 125, 25);
             this.radTextBoxRemarks.Size = new System.Drawing.Size(209, 142);
             this.radTextBoxRemarks.TabIndex = 29;
-            // 
-            // radLabelDoct
-            // 
-            this.radLabelDoct.AutoSize = false;
-            this.radLabelDoct.BackColor = System.Drawing.Color.White;
-            this.radLabelDoct.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.radLabelDoct.Location = new System.Drawing.Point(19, 74);
-            this.radLabelDoct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radLabelDoct.Name = "radLabelDoct";
-            // 
-            // 
-            // 
-            this.radLabelDoct.RootElement.AccessibleDescription = null;
-            this.radLabelDoct.RootElement.AccessibleName = null;
-            this.radLabelDoct.RootElement.ControlBounds = new System.Drawing.Rectangle(14, 60, 125, 22);
-            this.radLabelDoct.Size = new System.Drawing.Size(209, 39);
-            this.radLabelDoct.TabIndex = 28;
             // 
             // lblMessage
             // 
@@ -160,7 +142,7 @@ namespace PathologResultEntry.Controls
             this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblMessage.Location = new System.Drawing.Point(19, 513);
-            this.lblMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(4);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             // 
@@ -168,7 +150,7 @@ namespace PathologResultEntry.Controls
             // 
             this.lblMessage.RootElement.AccessibleDescription = null;
             this.lblMessage.RootElement.AccessibleName = null;
-            this.lblMessage.RootElement.ControlBounds = new System.Drawing.Rectangle(14, 417, 125, 22);
+            this.lblMessage.RootElement.ControlBounds = new System.Drawing.Rectangle(19, 513, 125, 22);
             this.lblMessage.Size = new System.Drawing.Size(221, 57);
             this.lblMessage.TabIndex = 27;
             this.lblMessage.Text = "The request was saved successfully.";
@@ -213,7 +195,7 @@ namespace PathologResultEntry.Controls
             // 
             this.radLabel1.RootElement.AccessibleDescription = null;
             this.radLabel1.RootElement.AccessibleName = null;
-            this.radLabel1.RootElement.ControlBounds = new System.Drawing.Rectangle(39, 26, 125, 22);
+            this.radLabel1.RootElement.ControlBounds = new System.Drawing.Rectangle(52, 32, 125, 22);
             this.radLabel1.Size = new System.Drawing.Size(144, 33);
             this.radLabel1.TabIndex = 11;
             this.radLabel1.Text = "הזמנה עבור";
@@ -239,36 +221,36 @@ namespace PathologResultEntry.Controls
             this.gridBlocks.MasterTemplate.AllowEditRow = false;
             this.gridBlocks.MasterTemplate.AutoGenerateColumns = false;
             this.gridBlocks.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn1.HeaderText = "צנצנת";
-            gridViewTextBoxColumn1.Name = "SampleCol";
-            gridViewTextBoxColumn1.Width = 144;
-            gridViewTextBoxColumn2.HeaderText = "בלוק";
-            gridViewTextBoxColumn2.Name = "BlockCol";
-            gridViewTextBoxColumn2.Width = 144;
-            gridViewCommandColumn1.DefaultText = "בחר צביעה";
-            gridViewCommandColumn1.HeaderText = "בחר צביעה";
-            gridViewCommandColumn1.Name = "cmdopen";
-            gridViewCommandColumn1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            gridViewCommandColumn1.UseDefaultText = true;
-            gridViewCommandColumn1.Width = 194;
-            gridViewTextBoxColumn3.HeaderText = "צביעות שנבחרו";
-            gridViewTextBoxColumn3.Name = "SelectedColorCol";
-            gridViewTextBoxColumn3.Width = 687;
-            gridViewTextBoxColumn3.WrapText = true;
-            gridViewCommandColumn2.HeaderText = "איפוס";
-            gridViewCommandColumn2.Image = global::PathologResultEntry.Properties.Resources.Cancel;
-            gridViewCommandColumn2.ImageLayout = System.Windows.Forms.ImageLayout.Tile;
-            gridViewCommandColumn2.Name = "cmd_zero";
-            gridViewCommandColumn2.UseDefaultText = true;
-            gridViewCommandColumn2.Width = 162;
+            gridViewTextBoxColumn4.HeaderText = "צנצנת";
+            gridViewTextBoxColumn4.Name = "SampleCol";
+            gridViewTextBoxColumn4.Width = 144;
+            gridViewTextBoxColumn5.HeaderText = "בלוק";
+            gridViewTextBoxColumn5.Name = "BlockCol";
+            gridViewTextBoxColumn5.Width = 144;
+            gridViewCommandColumn3.DefaultText = "בחר צביעה";
+            gridViewCommandColumn3.HeaderText = "בחר צביעה";
+            gridViewCommandColumn3.Name = "cmdopen";
+            gridViewCommandColumn3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            gridViewCommandColumn3.UseDefaultText = true;
+            gridViewCommandColumn3.Width = 194;
+            gridViewTextBoxColumn6.HeaderText = "צביעות שנבחרו";
+            gridViewTextBoxColumn6.Name = "SelectedColorCol";
+            gridViewTextBoxColumn6.Width = 687;
+            gridViewTextBoxColumn6.WrapText = true;
+            gridViewCommandColumn4.HeaderText = "איפוס";
+            gridViewCommandColumn4.Image = global::PathologResultEntry.Properties.Resources.Cancel;
+            gridViewCommandColumn4.ImageLayout = System.Windows.Forms.ImageLayout.Tile;
+            gridViewCommandColumn4.Name = "cmd_zero";
+            gridViewCommandColumn4.UseDefaultText = true;
+            gridViewCommandColumn4.Width = 162;
             this.gridBlocks.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewCommandColumn1,
-            gridViewTextBoxColumn3,
-            gridViewCommandColumn2});
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewCommandColumn3,
+            gridViewTextBoxColumn6,
+            gridViewCommandColumn4});
             this.gridBlocks.MasterTemplate.ShowFilteringRow = false;
-            this.gridBlocks.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.gridBlocks.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.gridBlocks.Name = "gridBlocks";
             this.gridBlocks.ReadOnly = true;
             // 
@@ -276,11 +258,22 @@ namespace PathologResultEntry.Controls
             // 
             this.gridBlocks.RootElement.AccessibleDescription = null;
             this.gridBlocks.RootElement.AccessibleName = null;
-            this.gridBlocks.RootElement.ControlBounds = new System.Drawing.Rectangle(249, 0, 300, 187);
+            this.gridBlocks.RootElement.ControlBounds = new System.Drawing.Rectangle(332, 0, 300, 187);
             this.gridBlocks.ShowGroupPanel = false;
             this.gridBlocks.Size = new System.Drawing.Size(1347, 810);
             this.gridBlocks.TabIndex = 25;
             this.gridBlocks.CommandCellClick += new Telerik.WinControls.UI.CommandCellClickEventHandler(this.gridBlocks_CommandCellClick);
+            // 
+            // lblOpName
+            // 
+            this.lblOpName.AutoSize = true;
+            this.lblOpName.BackColor = System.Drawing.Color.White;
+            this.lblOpName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblOpName.Location = new System.Drawing.Point(76, 80);
+            this.lblOpName.Name = "lblOpName";
+            this.lblOpName.Size = new System.Drawing.Size(101, 25);
+            this.lblOpName.TabIndex = 31;
+            this.lblOpName.Text = "שם דוקטור";
             // 
             // ExtraRequest
             // 
@@ -297,7 +290,6 @@ namespace PathologResultEntry.Controls
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBoxRemarks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabelDoct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblMessage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBlocks.MasterTemplate)).EndInit();
@@ -317,9 +309,9 @@ namespace PathologResultEntry.Controls
         private System.Windows.Forms.Button btn_addColors;
         private System.Windows.Forms.Button button1;
         private Telerik.WinControls.UI.RadLabel lblMessage;
-        private Telerik.WinControls.UI.RadLabel radLabelDoct;
         private Telerik.WinControls.UI.RadGridView gridBlocks;
         private Telerik.WinControls.UI.RadLabel radLabel2;
         private Telerik.WinControls.UI.RadTextBox radTextBoxRemarks;
+        private System.Windows.Forms.Label lblOpName;
     }
 }

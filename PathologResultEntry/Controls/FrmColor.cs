@@ -8,7 +8,6 @@ using Patholab_DAL_V1;
 using System.IO;
 using Telerik.WinControls;
 using Telerik.WinControls.UI;
-using Patholab_XmlService;
 using LSSERVICEPROVIDERLib;
 using System.Text.RegularExpressions;
 using PathologResultEntry.Controls.Extra_req_Entities;

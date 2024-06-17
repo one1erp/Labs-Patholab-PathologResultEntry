@@ -55,11 +55,18 @@
             // radListControl1
             // 
             this.radListControl1.AutoSizeItems = true;
+            this.radListControl1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.radListControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radListControl1.ItemHeight = 25;
             this.radListControl1.Location = new System.Drawing.Point(3, 123);
             this.radListControl1.Name = "radListControl1";
-            this.radListControl1.Size = new System.Drawing.Size(252, 371);
+            // 
+            // 
+            // 
+            this.radListControl1.RootElement.AccessibleDescription = null;
+            this.radListControl1.RootElement.AccessibleName = null;
+            this.radListControl1.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 123, 120, 95);
+            this.radListControl1.Size = new System.Drawing.Size(266, 600);
             this.radListControl1.TabIndex = 0;
             this.radListControl1.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.radListControl1_SelectedIndexChanged);
             this.radListControl1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.radListControl1_MouseDoubleClick);
@@ -68,14 +75,14 @@
             // 
             this.lbMedical.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbMedical.FormattingEnabled = true;
-            this.lbMedical.ItemHeight = 14;
             this.lbMedical.Location = new System.Drawing.Point(3, 3);
             this.lbMedical.Name = "lbMedical";
-            this.lbMedical.Size = new System.Drawing.Size(252, 114);
+            this.lbMedical.Size = new System.Drawing.Size(266, 114);
             this.lbMedical.TabIndex = 3;
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.AutoScroll = true;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.lbMedical, 0, 0);
@@ -86,7 +93,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(258, 497);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(272, 760);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // HistoryCtl
@@ -95,7 +102,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HistoryCtl";
-            this.Size = new System.Drawing.Size(258, 497);
+            this.Size = new System.Drawing.Size(272, 760);
             ((System.ComponentModel.ISupportInitialize)(this.radListControl1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

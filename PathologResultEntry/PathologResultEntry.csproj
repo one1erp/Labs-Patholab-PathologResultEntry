@@ -87,9 +87,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\DLLS\Patholab_Common.dll</HintPath>
     </Reference>
+    <Reference Include="Patholab_DAL_V1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLS\Patholab_DAL_V1.dll</HintPath>
+    </Reference>
     <Reference Include="Patholab_XmlService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLLS\Patholab_XmlService.dll</HintPath>
+      <HintPath>..\..\Patholab_XmlService\bin\Debug\Patholab_XmlService.dll</HintPath>
     </Reference>
     <Reference Include="PathologDiagnosis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -429,12 +433,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\portal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Patholab_DAL_V1\Patholab_DAL_V1\Patholab_DAL_V1.csproj">
-      <Project>{654b85ea-0add-42ad-aa0a-fae4cb001f97}</Project>
-      <Name>Patholab_DAL_V1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
