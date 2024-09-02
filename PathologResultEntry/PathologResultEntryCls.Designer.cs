@@ -186,29 +186,31 @@ namespace PathologResultEntry
             this.pnlSdgDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSdgDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.pnlSdgDetails.Location = new System.Drawing.Point(0, 0);
+            this.pnlSdgDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlSdgDetails.Name = "pnlSdgDetails";
             // 
             // 
             // 
             this.pnlSdgDetails.RootElement.AccessibleDescription = null;
             this.pnlSdgDetails.RootElement.AccessibleName = null;
-            this.pnlSdgDetails.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 3329, 66);
-            this.pnlSdgDetails.Size = new System.Drawing.Size(1469, 66);
+            this.pnlSdgDetails.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 5499, 66);
+            this.pnlSdgDetails.Size = new System.Drawing.Size(1959, 81);
             this.pnlSdgDetails.TabIndex = 0;
             // 
             // lblRev
             // 
             this.lblRev.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblRev.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRev.Location = new System.Drawing.Point(411, 26);
+            this.lblRev.Location = new System.Drawing.Point(548, 32);
+            this.lblRev.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblRev.Name = "lblRev";
             // 
             // 
             // 
             this.lblRev.RootElement.AccessibleDescription = null;
             this.lblRev.RootElement.AccessibleName = null;
-            this.lblRev.RootElement.ControlBounds = new System.Drawing.Rectangle(411, 26, 100, 18);
-            this.lblRev.Size = new System.Drawing.Size(152, 28);
+            this.lblRev.RootElement.ControlBounds = new System.Drawing.Rectangle(411, 26, 125, 22);
+            this.lblRev.Size = new System.Drawing.Size(203, 34);
             this.lblRev.TabIndex = 50;
             this.lblRev.Text = "תשובה מעודכנת";
             this.lblRev.Visible = false;
@@ -221,9 +223,10 @@ namespace PathologResultEntry
             this.buttonExtraDocuments.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.buttonExtraDocuments.ForeColor = System.Drawing.Color.Black;
             this.buttonExtraDocuments.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonExtraDocuments.Location = new System.Drawing.Point(1101, 8);
+            this.buttonExtraDocuments.Location = new System.Drawing.Point(1468, 10);
+            this.buttonExtraDocuments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonExtraDocuments.Name = "buttonExtraDocuments";
-            this.buttonExtraDocuments.Size = new System.Drawing.Size(58, 58);
+            this.buttonExtraDocuments.Size = new System.Drawing.Size(77, 71);
             this.buttonExtraDocuments.TabIndex = 49;
             this.buttonExtraDocuments.UseVisualStyleBackColor = false;
             this.buttonExtraDocuments.Click += new System.EventHandler(this.buttonExtraDocuments_Click);
@@ -236,9 +239,10 @@ namespace PathologResultEntry
             this.buttonOpenPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.buttonOpenPortal.ForeColor = System.Drawing.Color.Black;
             this.buttonOpenPortal.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonOpenPortal.Location = new System.Drawing.Point(1023, 8);
+            this.buttonOpenPortal.Location = new System.Drawing.Point(1364, 10);
+            this.buttonOpenPortal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonOpenPortal.Name = "buttonOpenPortal";
-            this.buttonOpenPortal.Size = new System.Drawing.Size(58, 58);
+            this.buttonOpenPortal.Size = new System.Drawing.Size(77, 71);
             this.buttonOpenPortal.TabIndex = 48;
             this.buttonOpenPortal.UseVisualStyleBackColor = false;
             this.buttonOpenPortal.Click += new System.EventHandler(this.buttonOpenPortal_Click);
@@ -250,15 +254,16 @@ namespace PathologResultEntry
             this.txtBarcodeName.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtBarcodeName.CausesValidation = false;
             this.txtBarcodeName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.txtBarcodeName.Location = new System.Drawing.Point(1630, 26);
+            this.txtBarcodeName.Location = new System.Drawing.Point(1760, 32);
+            this.txtBarcodeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBarcodeName.Name = "txtBarcodeName";
             // 
             // 
             // 
             this.txtBarcodeName.RootElement.AccessibleDescription = null;
             this.txtBarcodeName.RootElement.AccessibleName = null;
-            this.txtBarcodeName.RootElement.ControlBounds = new System.Drawing.Rectangle(1320, 26, 100, 20);
-            this.txtBarcodeName.Size = new System.Drawing.Size(149, 28);
+            this.txtBarcodeName.RootElement.ControlBounds = new System.Drawing.Rectangle(1630, 26, 125, 25);
+            this.txtBarcodeName.Size = new System.Drawing.Size(199, 34);
             this.txtBarcodeName.TabIndex = 20;
             this.txtBarcodeName.Visible = false;
             this.txtBarcodeName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBarcode_KeyDown);
@@ -267,9 +272,10 @@ namespace PathologResultEntry
             // 
             this.picQC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.picQC.Image = ((System.Drawing.Image)(resources.GetObject("picQC.Image")));
-            this.picQC.Location = new System.Drawing.Point(169, 19);
+            this.picQC.Location = new System.Drawing.Point(225, 23);
+            this.picQC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picQC.Name = "picQC";
-            this.picQC.Size = new System.Drawing.Size(51, 41);
+            this.picQC.Size = new System.Drawing.Size(68, 50);
             this.picQC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picQC.TabIndex = 45;
             this.picQC.TabStop = false;
@@ -279,9 +285,10 @@ namespace PathologResultEntry
             // 
             this.picMalig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.picMalig.Image = ((System.Drawing.Image)(resources.GetObject("picMalig.Image")));
-            this.picMalig.Location = new System.Drawing.Point(104, 17);
+            this.picMalig.Location = new System.Drawing.Point(139, 21);
+            this.picMalig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picMalig.Name = "picMalig";
-            this.picMalig.Size = new System.Drawing.Size(47, 42);
+            this.picMalig.Size = new System.Drawing.Size(63, 52);
             this.picMalig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picMalig.TabIndex = 44;
             this.picMalig.TabStop = false;
@@ -290,10 +297,9 @@ namespace PathologResultEntry
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, -1);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(12, -1);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 41;
             this.label2.Text = "V9.20";
             // 
@@ -302,7 +308,8 @@ namespace PathologResultEntry
             this.lblPathoName.AutoSize = false;
             this.lblPathoName.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.lblPathoName.Font = new System.Drawing.Font("Segoe UI Symbol", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPathoName.Location = new System.Drawing.Point(596, 8);
+            this.lblPathoName.Location = new System.Drawing.Point(795, 10);
+            this.lblPathoName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPathoName.Name = "lblPathoName";
             this.lblPathoName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             // 
@@ -310,8 +317,8 @@ namespace PathologResultEntry
             // 
             this.lblPathoName.RootElement.AccessibleDescription = null;
             this.lblPathoName.RootElement.AccessibleName = null;
-            this.lblPathoName.RootElement.ControlBounds = new System.Drawing.Rectangle(596, 8, 100, 18);
-            this.lblPathoName.Size = new System.Drawing.Size(410, 58);
+            this.lblPathoName.RootElement.ControlBounds = new System.Drawing.Rectangle(596, 8, 125, 22);
+            this.lblPathoName.Size = new System.Drawing.Size(547, 71);
             this.lblPathoName.TabIndex = 40;
             this.lblPathoName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -320,15 +327,16 @@ namespace PathologResultEntry
             this.radLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radLabel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.radLabel3.Location = new System.Drawing.Point(-40720, 35);
+            this.radLabel3.Location = new System.Drawing.Point(-32768, 43);
+            this.radLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radLabel3.Name = "radLabel3";
             // 
             // 
             // 
             this.radLabel3.RootElement.AccessibleDescription = null;
             this.radLabel3.RootElement.AccessibleName = null;
-            this.radLabel3.RootElement.ControlBounds = new System.Drawing.Rectangle(-39480, 35, 100, 18);
-            this.radLabel3.Size = new System.Drawing.Size(113, 25);
+            this.radLabel3.RootElement.ControlBounds = new System.Drawing.Rectangle(-40720, 35, 125, 22);
+            this.radLabel3.Size = new System.Drawing.Size(151, 31);
             this.radLabel3.TabIndex = 33;
             this.radLabel3.Text = "מספר דרישה";
             this.radLabel3.Visible = false;
@@ -337,9 +345,10 @@ namespace PathologResultEntry
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 43);
+            this.pictureBox1.Size = new System.Drawing.Size(107, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
@@ -354,15 +363,16 @@ namespace PathologResultEntry
             this.pnlDetails.Controls.Add(this.gbOrder);
             this.pnlDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.pnlDetails.Location = new System.Drawing.Point(2, 2);
+            this.pnlDetails.Location = new System.Drawing.Point(3, 2);
+            this.pnlDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlDetails.Name = "pnlDetails";
             // 
             // 
             // 
             this.pnlDetails.RootElement.AccessibleDescription = null;
             this.pnlDetails.RootElement.AccessibleName = null;
-            this.pnlDetails.RootElement.ControlBounds = new System.Drawing.Rectangle(2, 2, 200, 100);
-            this.pnlDetails.Size = new System.Drawing.Size(268, 756);
+            this.pnlDetails.RootElement.ControlBounds = new System.Drawing.Rectangle(2, 2, 250, 125);
+            this.pnlDetails.Size = new System.Drawing.Size(359, 933);
             this.pnlDetails.TabIndex = 36;
             // 
             // gbMacro
@@ -372,9 +382,11 @@ namespace PathologResultEntry
             this.gbMacro.Controls.Add(this.radLabel7);
             this.gbMacro.Controls.Add(this.txtMacroDoc);
             this.gbMacro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.gbMacro.Location = new System.Drawing.Point(13, 369);
+            this.gbMacro.Location = new System.Drawing.Point(17, 454);
+            this.gbMacro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbMacro.Name = "gbMacro";
-            this.gbMacro.Size = new System.Drawing.Size(246, 76);
+            this.gbMacro.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbMacro.Size = new System.Drawing.Size(328, 94);
             this.gbMacro.TabIndex = 40;
             this.gbMacro.TabStop = false;
             this.gbMacro.Text = "רופא מאקרו";
@@ -383,7 +395,7 @@ namespace PathologResultEntry
             // 
             this.radLabel10.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel10.Location = new System.Drawing.Point(138, 43);
+            this.radLabel10.Location = new System.Drawing.Point(184, 53);
             this.radLabel10.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel10.Name = "radLabel10";
             this.radLabel10.Padding = new System.Windows.Forms.Padding(1);
@@ -392,8 +404,8 @@ namespace PathologResultEntry
             // 
             this.radLabel10.RootElement.AccessibleDescription = null;
             this.radLabel10.RootElement.AccessibleName = null;
-            this.radLabel10.RootElement.ControlBounds = new System.Drawing.Rectangle(138, 43, 100, 18);
-            this.radLabel10.Size = new System.Drawing.Size(104, 19);
+            this.radLabel10.RootElement.ControlBounds = new System.Drawing.Rectangle(138, 43, 125, 22);
+            this.radLabel10.Size = new System.Drawing.Size(139, 23);
             this.radLabel10.TabIndex = 11;
             this.radLabel10.Text = "שעת ביצוע מאקרו:";
             this.radLabel10.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -403,7 +415,7 @@ namespace PathologResultEntry
             this.txtMacroTime.AutoSize = false;
             this.txtMacroTime.BackColor = System.Drawing.SystemColors.Control;
             this.txtMacroTime.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtMacroTime.Location = new System.Drawing.Point(6, 42);
+            this.txtMacroTime.Location = new System.Drawing.Point(8, 52);
             this.txtMacroTime.Margin = new System.Windows.Forms.Padding(1);
             this.txtMacroTime.Name = "txtMacroTime";
             this.txtMacroTime.Padding = new System.Windows.Forms.Padding(1);
@@ -413,16 +425,16 @@ namespace PathologResultEntry
             // 
             this.txtMacroTime.RootElement.AccessibleDescription = null;
             this.txtMacroTime.RootElement.AccessibleName = null;
-            this.txtMacroTime.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 42, 100, 20);
+            this.txtMacroTime.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 42, 125, 25);
             this.txtMacroTime.RootElement.Enabled = true;
-            this.txtMacroTime.Size = new System.Drawing.Size(123, 22);
+            this.txtMacroTime.Size = new System.Drawing.Size(164, 27);
             this.txtMacroTime.TabIndex = 10;
             // 
             // radLabel7
             // 
             this.radLabel7.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel7.Location = new System.Drawing.Point(167, 18);
+            this.radLabel7.Location = new System.Drawing.Point(223, 22);
             this.radLabel7.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel7.Name = "radLabel7";
             this.radLabel7.Padding = new System.Windows.Forms.Padding(1);
@@ -431,8 +443,8 @@ namespace PathologResultEntry
             // 
             this.radLabel7.RootElement.AccessibleDescription = null;
             this.radLabel7.RootElement.AccessibleName = null;
-            this.radLabel7.RootElement.ControlBounds = new System.Drawing.Rectangle(167, 18, 100, 18);
-            this.radLabel7.Size = new System.Drawing.Size(74, 19);
+            this.radLabel7.RootElement.ControlBounds = new System.Drawing.Rectangle(167, 18, 125, 22);
+            this.radLabel7.Size = new System.Drawing.Size(99, 23);
             this.radLabel7.TabIndex = 9;
             this.radLabel7.Text = "רופא מאקרו:";
             this.radLabel7.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -442,7 +454,7 @@ namespace PathologResultEntry
             this.txtMacroDoc.AutoSize = false;
             this.txtMacroDoc.BackColor = System.Drawing.SystemColors.Control;
             this.txtMacroDoc.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtMacroDoc.Location = new System.Drawing.Point(6, 16);
+            this.txtMacroDoc.Location = new System.Drawing.Point(8, 20);
             this.txtMacroDoc.Margin = new System.Windows.Forms.Padding(1);
             this.txtMacroDoc.Name = "txtMacroDoc";
             this.txtMacroDoc.Padding = new System.Windows.Forms.Padding(1);
@@ -452,16 +464,16 @@ namespace PathologResultEntry
             // 
             this.txtMacroDoc.RootElement.AccessibleDescription = null;
             this.txtMacroDoc.RootElement.AccessibleName = null;
-            this.txtMacroDoc.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 16, 100, 20);
+            this.txtMacroDoc.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 16, 125, 25);
             this.txtMacroDoc.RootElement.Enabled = true;
-            this.txtMacroDoc.Size = new System.Drawing.Size(154, 22);
+            this.txtMacroDoc.Size = new System.Drawing.Size(205, 27);
             this.txtMacroDoc.TabIndex = 8;
             // 
             // labelHasMaterials
             // 
             this.labelHasMaterials.BackColor = System.Drawing.SystemColors.Control;
             this.labelHasMaterials.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.labelHasMaterials.Location = new System.Drawing.Point(192, 448);
+            this.labelHasMaterials.Location = new System.Drawing.Point(256, 551);
             this.labelHasMaterials.Margin = new System.Windows.Forms.Padding(1);
             this.labelHasMaterials.Name = "labelHasMaterials";
             // 
@@ -469,8 +481,8 @@ namespace PathologResultEntry
             // 
             this.labelHasMaterials.RootElement.AccessibleDescription = null;
             this.labelHasMaterials.RootElement.AccessibleName = null;
-            this.labelHasMaterials.RootElement.ControlBounds = new System.Drawing.Rectangle(192, 448, 100, 18);
-            this.labelHasMaterials.Size = new System.Drawing.Size(67, 17);
+            this.labelHasMaterials.RootElement.ControlBounds = new System.Drawing.Rectangle(192, 448, 125, 22);
+            this.labelHasMaterials.Size = new System.Drawing.Size(89, 21);
             this.labelHasMaterials.TabIndex = 39;
             this.labelHasMaterials.Text = "נשאר חומר:";
             this.labelHasMaterials.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -490,11 +502,11 @@ namespace PathologResultEntry
             this.gbClient.Controls.Add(this.txtIdentity);
             this.gbClient.Controls.Add(this.txtFN);
             this.gbClient.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbClient.Location = new System.Drawing.Point(13, 4);
+            this.gbClient.Location = new System.Drawing.Point(17, 5);
             this.gbClient.Margin = new System.Windows.Forms.Padding(1);
             this.gbClient.Name = "gbClient";
             this.gbClient.Padding = new System.Windows.Forms.Padding(1);
-            this.gbClient.Size = new System.Drawing.Size(246, 176);
+            this.gbClient.Size = new System.Drawing.Size(328, 217);
             this.gbClient.TabIndex = 34;
             this.gbClient.TabStop = false;
             this.gbClient.Text = "פרטי נבדק";
@@ -503,7 +515,7 @@ namespace PathologResultEntry
             // 
             this.radLabel6.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel6.Location = new System.Drawing.Point(210, 143);
+            this.radLabel6.Location = new System.Drawing.Point(280, 176);
             this.radLabel6.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel6.Name = "radLabel6";
             // 
@@ -511,8 +523,8 @@ namespace PathologResultEntry
             // 
             this.radLabel6.RootElement.AccessibleDescription = null;
             this.radLabel6.RootElement.AccessibleName = null;
-            this.radLabel6.RootElement.ControlBounds = new System.Drawing.Rectangle(210, 143, 100, 18);
-            this.radLabel6.Size = new System.Drawing.Size(25, 17);
+            this.radLabel6.RootElement.ControlBounds = new System.Drawing.Rectangle(210, 143, 125, 22);
+            this.radLabel6.Size = new System.Drawing.Size(33, 21);
             this.radLabel6.TabIndex = 9;
             this.radLabel6.Text = "גיל:";
             this.radLabel6.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -524,15 +536,16 @@ namespace PathologResultEntry
             this.BTNcLIENT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTNcLIENT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.BTNcLIENT.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BTNcLIENT.Location = new System.Drawing.Point(3, 24);
+            this.BTNcLIENT.Location = new System.Drawing.Point(4, 30);
+            this.BTNcLIENT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTNcLIENT.Name = "BTNcLIENT";
             // 
             // 
             // 
             this.BTNcLIENT.RootElement.AccessibleDescription = null;
             this.BTNcLIENT.RootElement.AccessibleName = null;
-            this.BTNcLIENT.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 24, 110, 24);
-            this.BTNcLIENT.Size = new System.Drawing.Size(80, 23);
+            this.BTNcLIENT.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 24, 137, 30);
+            this.BTNcLIENT.Size = new System.Drawing.Size(107, 28);
             this.BTNcLIENT.TabIndex = 40;
             this.BTNcLIENT.Text = "עדכון נבדק";
             this.BTNcLIENT.Click += new System.EventHandler(this.EditClient_Click);
@@ -542,7 +555,7 @@ namespace PathologResultEntry
             this.txtAge.AutoSize = false;
             this.txtAge.BackColor = System.Drawing.SystemColors.Control;
             this.txtAge.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtAge.Location = new System.Drawing.Point(10, 143);
+            this.txtAge.Location = new System.Drawing.Point(13, 176);
             this.txtAge.Margin = new System.Windows.Forms.Padding(1);
             this.txtAge.Name = "txtAge";
             this.txtAge.ReadOnly = true;
@@ -551,16 +564,16 @@ namespace PathologResultEntry
             // 
             this.txtAge.RootElement.AccessibleDescription = null;
             this.txtAge.RootElement.AccessibleName = null;
-            this.txtAge.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 143, 100, 20);
+            this.txtAge.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 143, 125, 25);
             this.txtAge.RootElement.Enabled = true;
-            this.txtAge.Size = new System.Drawing.Size(166, 20);
+            this.txtAge.Size = new System.Drawing.Size(221, 25);
             this.txtAge.TabIndex = 8;
             // 
             // radLabel5
             // 
             this.radLabel5.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel5.Location = new System.Drawing.Point(210, 98);
+            this.radLabel5.Location = new System.Drawing.Point(280, 121);
             this.radLabel5.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel5.Name = "radLabel5";
             // 
@@ -568,8 +581,8 @@ namespace PathologResultEntry
             // 
             this.radLabel5.RootElement.AccessibleDescription = null;
             this.radLabel5.RootElement.AccessibleName = null;
-            this.radLabel5.RootElement.ControlBounds = new System.Drawing.Rectangle(210, 98, 100, 18);
-            this.radLabel5.Size = new System.Drawing.Size(27, 17);
+            this.radLabel5.RootElement.ControlBounds = new System.Drawing.Rectangle(210, 98, 125, 22);
+            this.radLabel5.Size = new System.Drawing.Size(36, 21);
             this.radLabel5.TabIndex = 7;
             this.radLabel5.Text = "מין :";
             this.radLabel5.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -578,7 +591,7 @@ namespace PathologResultEntry
             // 
             this.radLabel9.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel9.Location = new System.Drawing.Point(190, 121);
+            this.radLabel9.Location = new System.Drawing.Point(253, 149);
             this.radLabel9.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel9.Name = "radLabel9";
             // 
@@ -586,8 +599,8 @@ namespace PathologResultEntry
             // 
             this.radLabel9.RootElement.AccessibleDescription = null;
             this.radLabel9.RootElement.AccessibleName = null;
-            this.radLabel9.RootElement.ControlBounds = new System.Drawing.Rectangle(190, 121, 100, 18);
-            this.radLabel9.Size = new System.Drawing.Size(47, 17);
+            this.radLabel9.RootElement.ControlBounds = new System.Drawing.Rectangle(190, 121, 125, 22);
+            this.radLabel9.Size = new System.Drawing.Size(63, 21);
             this.radLabel9.TabIndex = 7;
             this.radLabel9.Text = "ת.לידה :";
             this.radLabel9.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -596,7 +609,7 @@ namespace PathologResultEntry
             // 
             this.radLabel2.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel2.Location = new System.Drawing.Point(178, 76);
+            this.radLabel2.Location = new System.Drawing.Point(237, 94);
             this.radLabel2.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel2.Name = "radLabel2";
             // 
@@ -604,8 +617,8 @@ namespace PathologResultEntry
             // 
             this.radLabel2.RootElement.AccessibleDescription = null;
             this.radLabel2.RootElement.AccessibleName = null;
-            this.radLabel2.RootElement.ControlBounds = new System.Drawing.Rectangle(178, 76, 100, 18);
-            this.radLabel2.Size = new System.Drawing.Size(59, 17);
+            this.radLabel2.RootElement.ControlBounds = new System.Drawing.Rectangle(178, 76, 125, 22);
+            this.radLabel2.Size = new System.Drawing.Size(79, 21);
             this.radLabel2.TabIndex = 7;
             this.radLabel2.Text = "ת.ז/דרכון :";
             this.radLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -614,7 +627,7 @@ namespace PathologResultEntry
             // 
             this.radLabel1.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel1.Location = new System.Drawing.Point(184, 51);
+            this.radLabel1.Location = new System.Drawing.Point(245, 63);
             this.radLabel1.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel1.Name = "radLabel1";
             // 
@@ -622,8 +635,8 @@ namespace PathologResultEntry
             // 
             this.radLabel1.RootElement.AccessibleDescription = null;
             this.radLabel1.RootElement.AccessibleName = null;
-            this.radLabel1.RootElement.ControlBounds = new System.Drawing.Rectangle(184, 51, 100, 18);
-            this.radLabel1.Size = new System.Drawing.Size(55, 17);
+            this.radLabel1.RootElement.ControlBounds = new System.Drawing.Rectangle(184, 51, 125, 22);
+            this.radLabel1.Size = new System.Drawing.Size(73, 21);
             this.radLabel1.TabIndex = 6;
             this.radLabel1.Text = "שם מלא :";
             this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -633,7 +646,7 @@ namespace PathologResultEntry
             this.txtDB.AutoSize = false;
             this.txtDB.BackColor = System.Drawing.SystemColors.Control;
             this.txtDB.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtDB.Location = new System.Drawing.Point(10, 121);
+            this.txtDB.Location = new System.Drawing.Point(13, 149);
             this.txtDB.Margin = new System.Windows.Forms.Padding(1);
             this.txtDB.Name = "txtDB";
             this.txtDB.ReadOnly = true;
@@ -642,9 +655,9 @@ namespace PathologResultEntry
             // 
             this.txtDB.RootElement.AccessibleDescription = null;
             this.txtDB.RootElement.AccessibleName = null;
-            this.txtDB.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 121, 100, 20);
+            this.txtDB.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 121, 125, 25);
             this.txtDB.RootElement.Enabled = true;
-            this.txtDB.Size = new System.Drawing.Size(166, 20);
+            this.txtDB.Size = new System.Drawing.Size(221, 25);
             this.txtDB.TabIndex = 3;
             // 
             // txtGender
@@ -652,7 +665,7 @@ namespace PathologResultEntry
             this.txtGender.AutoSize = false;
             this.txtGender.BackColor = System.Drawing.SystemColors.Control;
             this.txtGender.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtGender.Location = new System.Drawing.Point(10, 98);
+            this.txtGender.Location = new System.Drawing.Point(13, 121);
             this.txtGender.Margin = new System.Windows.Forms.Padding(1);
             this.txtGender.Name = "txtGender";
             this.txtGender.ReadOnly = true;
@@ -661,9 +674,9 @@ namespace PathologResultEntry
             // 
             this.txtGender.RootElement.AccessibleDescription = null;
             this.txtGender.RootElement.AccessibleName = null;
-            this.txtGender.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 98, 100, 20);
+            this.txtGender.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 98, 125, 25);
             this.txtGender.RootElement.Enabled = true;
-            this.txtGender.Size = new System.Drawing.Size(166, 20);
+            this.txtGender.Size = new System.Drawing.Size(221, 25);
             this.txtGender.TabIndex = 4;
             // 
             // txtIdentity
@@ -671,7 +684,7 @@ namespace PathologResultEntry
             this.txtIdentity.AutoSize = false;
             this.txtIdentity.BackColor = System.Drawing.SystemColors.Control;
             this.txtIdentity.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtIdentity.Location = new System.Drawing.Point(10, 76);
+            this.txtIdentity.Location = new System.Drawing.Point(13, 94);
             this.txtIdentity.Margin = new System.Windows.Forms.Padding(1);
             this.txtIdentity.Name = "txtIdentity";
             this.txtIdentity.ReadOnly = true;
@@ -680,8 +693,8 @@ namespace PathologResultEntry
             // 
             this.txtIdentity.RootElement.AccessibleDescription = null;
             this.txtIdentity.RootElement.AccessibleName = null;
-            this.txtIdentity.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 76, 100, 20);
-            this.txtIdentity.Size = new System.Drawing.Size(166, 20);
+            this.txtIdentity.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 76, 125, 25);
+            this.txtIdentity.Size = new System.Drawing.Size(221, 25);
             this.txtIdentity.TabIndex = 5;
             // 
             // txtFN
@@ -689,7 +702,7 @@ namespace PathologResultEntry
             this.txtFN.AutoSize = false;
             this.txtFN.BackColor = System.Drawing.SystemColors.Control;
             this.txtFN.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtFN.Location = new System.Drawing.Point(10, 51);
+            this.txtFN.Location = new System.Drawing.Point(13, 63);
             this.txtFN.Margin = new System.Windows.Forms.Padding(1);
             this.txtFN.Name = "txtFN";
             this.txtFN.ReadOnly = true;
@@ -699,9 +712,9 @@ namespace PathologResultEntry
             // 
             this.txtFN.RootElement.AccessibleDescription = null;
             this.txtFN.RootElement.AccessibleName = null;
-            this.txtFN.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 51, 100, 20);
+            this.txtFN.RootElement.ControlBounds = new System.Drawing.Rectangle(10, 51, 125, 25);
             this.txtFN.RootElement.Enabled = true;
-            this.txtFN.Size = new System.Drawing.Size(166, 20);
+            this.txtFN.Size = new System.Drawing.Size(221, 25);
             this.txtFN.TabIndex = 2;
             // 
             // gbOrder
@@ -719,12 +732,12 @@ namespace PathologResultEntry
             this.gbOrder.Controls.Add(this.radLabel15);
             this.gbOrder.Controls.Add(this.txtImp);
             this.gbOrder.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOrder.Location = new System.Drawing.Point(13, 183);
+            this.gbOrder.Location = new System.Drawing.Point(17, 225);
             this.gbOrder.Margin = new System.Windows.Forms.Padding(1);
             this.gbOrder.Name = "gbOrder";
             this.gbOrder.Padding = new System.Windows.Forms.Padding(1);
             this.gbOrder.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gbOrder.Size = new System.Drawing.Size(246, 182);
+            this.gbOrder.Size = new System.Drawing.Size(328, 224);
             this.gbOrder.TabIndex = 35;
             this.gbOrder.TabStop = false;
             this.gbOrder.Text = "פרטי הזמנה";
@@ -738,7 +751,7 @@ namespace PathologResultEntry
             this.CmbPatholog.DropDownHeight = 250;
             this.CmbPatholog.Enabled = false;
             this.CmbPatholog.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.CmbPatholog.Location = new System.Drawing.Point(6, 145);
+            this.CmbPatholog.Location = new System.Drawing.Point(8, 178);
             this.CmbPatholog.Margin = new System.Windows.Forms.Padding(1);
             this.CmbPatholog.Name = "CmbPatholog";
             this.CmbPatholog.Padding = new System.Windows.Forms.Padding(1);
@@ -747,16 +760,16 @@ namespace PathologResultEntry
             // 
             this.CmbPatholog.RootElement.AccessibleDescription = null;
             this.CmbPatholog.RootElement.AccessibleName = null;
-            this.CmbPatholog.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 145, 125, 20);
+            this.CmbPatholog.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 145, 156, 25);
             this.CmbPatholog.RootElement.Enabled = true;
-            this.CmbPatholog.Size = new System.Drawing.Size(154, 22);
+            this.CmbPatholog.Size = new System.Drawing.Size(205, 27);
             this.CmbPatholog.TabIndex = 20;
             // 
             // radLabel11
             // 
             this.radLabel11.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel11.Location = new System.Drawing.Point(166, 149);
+            this.radLabel11.Location = new System.Drawing.Point(221, 183);
             this.radLabel11.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel11.Name = "radLabel11";
             this.radLabel11.Padding = new System.Windows.Forms.Padding(1);
@@ -765,8 +778,8 @@ namespace PathologResultEntry
             // 
             this.radLabel11.RootElement.AccessibleDescription = null;
             this.radLabel11.RootElement.AccessibleName = null;
-            this.radLabel11.RootElement.ControlBounds = new System.Drawing.Rectangle(166, 149, 100, 18);
-            this.radLabel11.Size = new System.Drawing.Size(78, 19);
+            this.radLabel11.RootElement.ControlBounds = new System.Drawing.Rectangle(166, 149, 125, 22);
+            this.radLabel11.Size = new System.Drawing.Size(104, 23);
             this.radLabel11.TabIndex = 21;
             this.radLabel11.Text = "פתולוג מיועד:";
             this.radLabel11.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -775,7 +788,7 @@ namespace PathologResultEntry
             // 
             this.radLabel4.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel4.Location = new System.Drawing.Point(140, 46);
+            this.radLabel4.Location = new System.Drawing.Point(187, 57);
             this.radLabel4.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel4.Name = "radLabel4";
             this.radLabel4.Padding = new System.Windows.Forms.Padding(1);
@@ -784,8 +797,8 @@ namespace PathologResultEntry
             // 
             this.radLabel4.RootElement.AccessibleDescription = null;
             this.radLabel4.RootElement.AccessibleName = null;
-            this.radLabel4.RootElement.ControlBounds = new System.Drawing.Rectangle(140, 46, 100, 18);
-            this.radLabel4.Size = new System.Drawing.Size(102, 19);
+            this.radLabel4.RootElement.ControlBounds = new System.Drawing.Rectangle(140, 46, 125, 22);
+            this.radLabel4.Size = new System.Drawing.Size(136, 23);
             this.radLabel4.TabIndex = 19;
             this.radLabel4.Text = "טלפון רופא מבצע:";
             this.radLabel4.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -794,7 +807,7 @@ namespace PathologResultEntry
             // 
             this.radLabel17.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel17.Location = new System.Drawing.Point(137, 96);
+            this.radLabel17.Location = new System.Drawing.Point(183, 118);
             this.radLabel17.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel17.Name = "radLabel17";
             this.radLabel17.Padding = new System.Windows.Forms.Padding(1);
@@ -803,8 +816,8 @@ namespace PathologResultEntry
             // 
             this.radLabel17.RootElement.AccessibleDescription = null;
             this.radLabel17.RootElement.AccessibleName = null;
-            this.radLabel17.RootElement.ControlBounds = new System.Drawing.Rectangle(137, 96, 100, 18);
-            this.radLabel17.Size = new System.Drawing.Size(104, 19);
+            this.radLabel17.RootElement.ControlBounds = new System.Drawing.Rectangle(137, 96, 125, 22);
+            this.radLabel17.Size = new System.Drawing.Size(139, 23);
             this.radLabel17.TabIndex = 17;
             this.radLabel17.Text = "טלפון רופא מפנה :";
             this.radLabel17.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -814,7 +827,7 @@ namespace PathologResultEntry
             this.txtImpPhone.AutoSize = false;
             this.txtImpPhone.BackColor = System.Drawing.SystemColors.Control;
             this.txtImpPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtImpPhone.Location = new System.Drawing.Point(6, 46);
+            this.txtImpPhone.Location = new System.Drawing.Point(8, 57);
             this.txtImpPhone.Margin = new System.Windows.Forms.Padding(1);
             this.txtImpPhone.Name = "txtImpPhone";
             this.txtImpPhone.Padding = new System.Windows.Forms.Padding(1);
@@ -824,9 +837,9 @@ namespace PathologResultEntry
             // 
             this.txtImpPhone.RootElement.AccessibleDescription = null;
             this.txtImpPhone.RootElement.AccessibleName = null;
-            this.txtImpPhone.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 46, 100, 20);
+            this.txtImpPhone.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 46, 125, 25);
             this.txtImpPhone.RootElement.Enabled = true;
-            this.txtImpPhone.Size = new System.Drawing.Size(129, 22);
+            this.txtImpPhone.Size = new System.Drawing.Size(172, 27);
             this.txtImpPhone.TabIndex = 18;
             // 
             // txtReferPhone
@@ -834,7 +847,7 @@ namespace PathologResultEntry
             this.txtReferPhone.AutoSize = false;
             this.txtReferPhone.BackColor = System.Drawing.SystemColors.Control;
             this.txtReferPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtReferPhone.Location = new System.Drawing.Point(6, 96);
+            this.txtReferPhone.Location = new System.Drawing.Point(8, 118);
             this.txtReferPhone.Margin = new System.Windows.Forms.Padding(1);
             this.txtReferPhone.Name = "txtReferPhone";
             this.txtReferPhone.Padding = new System.Windows.Forms.Padding(1);
@@ -844,16 +857,16 @@ namespace PathologResultEntry
             // 
             this.txtReferPhone.RootElement.AccessibleDescription = null;
             this.txtReferPhone.RootElement.AccessibleName = null;
-            this.txtReferPhone.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 96, 100, 20);
+            this.txtReferPhone.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 96, 125, 25);
             this.txtReferPhone.RootElement.Enabled = true;
-            this.txtReferPhone.Size = new System.Drawing.Size(129, 22);
+            this.txtReferPhone.Size = new System.Drawing.Size(172, 27);
             this.txtReferPhone.TabIndex = 16;
             // 
             // radLabel16
             // 
             this.radLabel16.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel16.Location = new System.Drawing.Point(170, 71);
+            this.radLabel16.Location = new System.Drawing.Point(227, 87);
             this.radLabel16.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel16.Name = "radLabel16";
             this.radLabel16.Padding = new System.Windows.Forms.Padding(1);
@@ -862,8 +875,8 @@ namespace PathologResultEntry
             // 
             this.radLabel16.RootElement.AccessibleDescription = null;
             this.radLabel16.RootElement.AccessibleName = null;
-            this.radLabel16.RootElement.ControlBounds = new System.Drawing.Rectangle(170, 71, 100, 18);
-            this.radLabel16.Size = new System.Drawing.Size(71, 19);
+            this.radLabel16.RootElement.ControlBounds = new System.Drawing.Rectangle(170, 71, 125, 22);
+            this.radLabel16.Size = new System.Drawing.Size(95, 23);
             this.radLabel16.TabIndex = 15;
             this.radLabel16.Text = "רופא מפנה :";
             this.radLabel16.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -873,7 +886,7 @@ namespace PathologResultEntry
             this.txtRefer.AutoSize = false;
             this.txtRefer.BackColor = System.Drawing.SystemColors.Control;
             this.txtRefer.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtRefer.Location = new System.Drawing.Point(6, 71);
+            this.txtRefer.Location = new System.Drawing.Point(8, 87);
             this.txtRefer.Margin = new System.Windows.Forms.Padding(1);
             this.txtRefer.Name = "txtRefer";
             this.txtRefer.Padding = new System.Windows.Forms.Padding(1);
@@ -883,9 +896,9 @@ namespace PathologResultEntry
             // 
             this.txtRefer.RootElement.AccessibleDescription = null;
             this.txtRefer.RootElement.AccessibleName = null;
-            this.txtRefer.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 71, 100, 20);
+            this.txtRefer.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 71, 125, 25);
             this.txtRefer.RootElement.Enabled = true;
-            this.txtRefer.Size = new System.Drawing.Size(154, 22);
+            this.txtRefer.Size = new System.Drawing.Size(205, 27);
             this.txtRefer.TabIndex = 14;
             // 
             // txtPriority
@@ -893,7 +906,7 @@ namespace PathologResultEntry
             this.txtPriority.AutoSize = false;
             this.txtPriority.BackColor = System.Drawing.SystemColors.Control;
             this.txtPriority.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtPriority.Location = new System.Drawing.Point(6, 121);
+            this.txtPriority.Location = new System.Drawing.Point(8, 149);
             this.txtPriority.Margin = new System.Windows.Forms.Padding(1);
             this.txtPriority.Name = "txtPriority";
             this.txtPriority.Padding = new System.Windows.Forms.Padding(1);
@@ -903,16 +916,16 @@ namespace PathologResultEntry
             // 
             this.txtPriority.RootElement.AccessibleDescription = null;
             this.txtPriority.RootElement.AccessibleName = null;
-            this.txtPriority.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 121, 100, 20);
+            this.txtPriority.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 121, 125, 25);
             this.txtPriority.RootElement.Enabled = true;
-            this.txtPriority.Size = new System.Drawing.Size(154, 22);
+            this.txtPriority.Size = new System.Drawing.Size(205, 27);
             this.txtPriority.TabIndex = 13;
             // 
             // radLabel8
             // 
             this.radLabel8.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel8.Location = new System.Drawing.Point(195, 121);
+            this.radLabel8.Location = new System.Drawing.Point(260, 149);
             this.radLabel8.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel8.Name = "radLabel8";
             this.radLabel8.Padding = new System.Windows.Forms.Padding(1);
@@ -921,8 +934,8 @@ namespace PathologResultEntry
             // 
             this.radLabel8.RootElement.AccessibleDescription = null;
             this.radLabel8.RootElement.AccessibleName = null;
-            this.radLabel8.RootElement.ControlBounds = new System.Drawing.Rectangle(195, 121, 100, 18);
-            this.radLabel8.Size = new System.Drawing.Size(44, 19);
+            this.radLabel8.RootElement.ControlBounds = new System.Drawing.Rectangle(195, 121, 125, 22);
+            this.radLabel8.Size = new System.Drawing.Size(59, 23);
             this.radLabel8.TabIndex = 12;
             this.radLabel8.Text = "עדיפות";
             this.radLabel8.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -931,7 +944,7 @@ namespace PathologResultEntry
             // 
             this.radLabel15.BackColor = System.Drawing.SystemColors.Control;
             this.radLabel15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel15.Location = new System.Drawing.Point(167, 20);
+            this.radLabel15.Location = new System.Drawing.Point(223, 25);
             this.radLabel15.Margin = new System.Windows.Forms.Padding(1);
             this.radLabel15.Name = "radLabel15";
             this.radLabel15.Padding = new System.Windows.Forms.Padding(1);
@@ -940,8 +953,8 @@ namespace PathologResultEntry
             // 
             this.radLabel15.RootElement.AccessibleDescription = null;
             this.radLabel15.RootElement.AccessibleName = null;
-            this.radLabel15.RootElement.ControlBounds = new System.Drawing.Rectangle(167, 20, 100, 18);
-            this.radLabel15.Size = new System.Drawing.Size(73, 19);
+            this.radLabel15.RootElement.ControlBounds = new System.Drawing.Rectangle(167, 20, 125, 22);
+            this.radLabel15.Size = new System.Drawing.Size(97, 23);
             this.radLabel15.TabIndex = 7;
             this.radLabel15.Text = "רופא מבצע :";
             this.radLabel15.TextAlignment = System.Drawing.ContentAlignment.TopRight;
@@ -951,7 +964,7 @@ namespace PathologResultEntry
             this.txtImp.AutoSize = false;
             this.txtImp.BackColor = System.Drawing.SystemColors.Control;
             this.txtImp.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtImp.Location = new System.Drawing.Point(6, 20);
+            this.txtImp.Location = new System.Drawing.Point(8, 25);
             this.txtImp.Margin = new System.Windows.Forms.Padding(1);
             this.txtImp.Name = "txtImp";
             this.txtImp.Padding = new System.Windows.Forms.Padding(1);
@@ -961,9 +974,9 @@ namespace PathologResultEntry
             // 
             this.txtImp.RootElement.AccessibleDescription = null;
             this.txtImp.RootElement.AccessibleName = null;
-            this.txtImp.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 20, 100, 20);
+            this.txtImp.RootElement.ControlBounds = new System.Drawing.Rectangle(6, 20, 125, 25);
             this.txtImp.RootElement.Enabled = true;
-            this.txtImp.Size = new System.Drawing.Size(154, 22);
+            this.txtImp.Size = new System.Drawing.Size(205, 27);
             this.txtImp.TabIndex = 3;
             // 
             // pnlButtons
@@ -986,22 +999,23 @@ namespace PathologResultEntry
             this.pnlButtons.Controls.Add(this.BtnExit);
             this.pnlButtons.Controls.Add(this.radButton1);
             this.pnlButtons.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.pnlButtons.Location = new System.Drawing.Point(1349, 96);
+            this.pnlButtons.Location = new System.Drawing.Point(1799, 118);
+            this.pnlButtons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlButtons.Name = "pnlButtons";
             // 
             // 
             // 
             this.pnlButtons.RootElement.AccessibleDescription = null;
             this.pnlButtons.RootElement.AccessibleName = null;
-            this.pnlButtons.RootElement.ControlBounds = new System.Drawing.Rectangle(1349, 96, 200, 100);
-            this.pnlButtons.Size = new System.Drawing.Size(105, 683);
+            this.pnlButtons.RootElement.ControlBounds = new System.Drawing.Rectangle(1349, 96, 250, 125);
+            this.pnlButtons.Size = new System.Drawing.Size(140, 841);
             this.pnlButtons.TabIndex = 40;
             // 
             // btnMngr
             // 
             this.btnMngr.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnMngr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnMngr.Location = new System.Drawing.Point(4, 16);
+            this.btnMngr.Location = new System.Drawing.Point(5, 20);
             this.btnMngr.Margin = new System.Windows.Forms.Padding(1);
             this.btnMngr.Name = "btnMngr";
             // 
@@ -1009,9 +1023,9 @@ namespace PathologResultEntry
             // 
             this.btnMngr.RootElement.AccessibleDescription = null;
             this.btnMngr.RootElement.AccessibleName = null;
-            this.btnMngr.RootElement.ControlBounds = new System.Drawing.Rectangle(4, 16, 110, 24);
+            this.btnMngr.RootElement.ControlBounds = new System.Drawing.Rectangle(4, 16, 137, 30);
             this.btnMngr.RootElement.Enabled = true;
-            this.btnMngr.Size = new System.Drawing.Size(98, 29);
+            this.btnMngr.Size = new System.Drawing.Size(131, 36);
             this.btnMngr.TabIndex = 32;
             this.btnMngr.Text = "בדיקות מנהל מערכת";
             this.btnMngr.Visible = false;
@@ -1020,10 +1034,10 @@ namespace PathologResultEntry
             // extraMaterialCtrl1
             // 
             this.extraMaterialCtrl1.ExMaterialButton = null;
-            this.extraMaterialCtrl1.Location = new System.Drawing.Point(2, 410);
-            this.extraMaterialCtrl1.Margin = new System.Windows.Forms.Padding(4);
+            this.extraMaterialCtrl1.Location = new System.Drawing.Point(3, 505);
+            this.extraMaterialCtrl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.extraMaterialCtrl1.Name = "extraMaterialCtrl1";
-            this.extraMaterialCtrl1.Size = new System.Drawing.Size(99, 30);
+            this.extraMaterialCtrl1.Size = new System.Drawing.Size(132, 37);
             this.extraMaterialCtrl1.TabIndex = 50;
             this.extraMaterialCtrl1.Load += new System.EventHandler(this.extraMaterialCtrl1_Load);
             // 
@@ -1033,7 +1047,7 @@ namespace PathologResultEntry
             this.BtnRescan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnRescan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.BtnRescan.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BtnRescan.Location = new System.Drawing.Point(3, 292);
+            this.BtnRescan.Location = new System.Drawing.Point(4, 359);
             this.BtnRescan.Margin = new System.Windows.Forms.Padding(1);
             this.BtnRescan.Name = "BtnRescan";
             // 
@@ -1041,8 +1055,8 @@ namespace PathologResultEntry
             // 
             this.BtnRescan.RootElement.AccessibleDescription = null;
             this.BtnRescan.RootElement.AccessibleName = null;
-            this.BtnRescan.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 292, 110, 24);
-            this.BtnRescan.Size = new System.Drawing.Size(98, 29);
+            this.BtnRescan.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 292, 137, 30);
+            this.BtnRescan.Size = new System.Drawing.Size(131, 36);
             this.BtnRescan.TabIndex = 43;
             this.BtnRescan.Text = "סריקה חוזרת";
             this.BtnRescan.Click += new System.EventHandler(this.BtnRescan_Click);
@@ -1053,7 +1067,7 @@ namespace PathologResultEntry
             this.BtnSendToAdvisor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnSendToAdvisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.BtnSendToAdvisor.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BtnSendToAdvisor.Location = new System.Drawing.Point(3, 253);
+            this.BtnSendToAdvisor.Location = new System.Drawing.Point(4, 311);
             this.BtnSendToAdvisor.Margin = new System.Windows.Forms.Padding(1);
             this.BtnSendToAdvisor.Name = "BtnSendToAdvisor";
             // 
@@ -1061,8 +1075,8 @@ namespace PathologResultEntry
             // 
             this.BtnSendToAdvisor.RootElement.AccessibleDescription = null;
             this.BtnSendToAdvisor.RootElement.AccessibleName = null;
-            this.BtnSendToAdvisor.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 253, 110, 24);
-            this.BtnSendToAdvisor.Size = new System.Drawing.Size(98, 29);
+            this.BtnSendToAdvisor.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 253, 137, 30);
+            this.BtnSendToAdvisor.Size = new System.Drawing.Size(131, 36);
             this.BtnSendToAdvisor.TabIndex = 42;
             this.BtnSendToAdvisor.Text = "התייעצות";
             this.BtnSendToAdvisor.Click += new System.EventHandler(this.BtnSendToAdvisor_Click);
@@ -1071,25 +1085,26 @@ namespace PathologResultEntry
             // 
             this.radButtonOpenSectra.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.radButtonOpenSectra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.radButtonOpenSectra.Location = new System.Drawing.Point(3, 371);
+            this.radButtonOpenSectra.Location = new System.Drawing.Point(4, 457);
+            this.radButtonOpenSectra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radButtonOpenSectra.Name = "radButtonOpenSectra";
             // 
             // 
             // 
             this.radButtonOpenSectra.RootElement.AccessibleDescription = null;
             this.radButtonOpenSectra.RootElement.AccessibleName = null;
-            this.radButtonOpenSectra.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 371, 110, 24);
-            this.radButtonOpenSectra.Size = new System.Drawing.Size(98, 29);
+            this.radButtonOpenSectra.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 371, 137, 30);
+            this.radButtonOpenSectra.Size = new System.Drawing.Size(131, 36);
             this.radButtonOpenSectra.TabIndex = 49;
             this.radButtonOpenSectra.Text = "סריקה דיגיטלית";
             this.radButtonOpenSectra.Click += new System.EventHandler(this.radButtonOpenSectra_Click);
             // 
             // requestRemarkControl1
             // 
-            this.requestRemarkControl1.Location = new System.Drawing.Point(2, 167);
+            this.requestRemarkControl1.Location = new System.Drawing.Point(3, 206);
             this.requestRemarkControl1.Margin = new System.Windows.Forms.Padding(0);
             this.requestRemarkControl1.Name = "requestRemarkControl1";
-            this.requestRemarkControl1.Size = new System.Drawing.Size(99, 45);
+            this.requestRemarkControl1.Size = new System.Drawing.Size(132, 55);
             this.requestRemarkControl1.TabIndex = 42;
             // 
             // BtnExtReq
@@ -1098,7 +1113,7 @@ namespace PathologResultEntry
             this.BtnExtReq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnExtReq.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.BtnExtReq.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BtnExtReq.Location = new System.Drawing.Point(3, 213);
+            this.BtnExtReq.Location = new System.Drawing.Point(4, 262);
             this.BtnExtReq.Margin = new System.Windows.Forms.Padding(1);
             this.BtnExtReq.Name = "BtnExtReq";
             // 
@@ -1106,8 +1121,8 @@ namespace PathologResultEntry
             // 
             this.BtnExtReq.RootElement.AccessibleDescription = null;
             this.BtnExtReq.RootElement.AccessibleName = null;
-            this.BtnExtReq.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 213, 110, 24);
-            this.BtnExtReq.Size = new System.Drawing.Size(98, 29);
+            this.BtnExtReq.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 213, 137, 30);
+            this.BtnExtReq.Size = new System.Drawing.Size(131, 36);
             this.BtnExtReq.TabIndex = 41;
             this.BtnExtReq.Text = "בקשה לצביעה";
             this.BtnExtReq.Click += new System.EventHandler(this.ExtraReq_Click);
@@ -1116,12 +1131,12 @@ namespace PathologResultEntry
             // 
             this.sdgSttachmentsCtrl1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.sdgSttachmentsCtrl1.dal = null;
-            this.sdgSttachmentsCtrl1.Location = new System.Drawing.Point(3, 590);
+            this.sdgSttachmentsCtrl1.Location = new System.Drawing.Point(4, 726);
             this.sdgSttachmentsCtrl1.Margin = new System.Windows.Forms.Padding(1);
             this.sdgSttachmentsCtrl1.Name = "sdgSttachmentsCtrl1";
             this.sdgSttachmentsCtrl1.NautilusServiceProvider = null;
             this.sdgSttachmentsCtrl1.Sdg = null;
-            this.sdgSttachmentsCtrl1.Size = new System.Drawing.Size(98, 9);
+            this.sdgSttachmentsCtrl1.Size = new System.Drawing.Size(131, 11);
             this.sdgSttachmentsCtrl1.TabIndex = 0;
             this.sdgSttachmentsCtrl1.Visible = false;
             // 
@@ -1129,7 +1144,7 @@ namespace PathologResultEntry
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnSave.Location = new System.Drawing.Point(3, 118);
+            this.btnSave.Location = new System.Drawing.Point(4, 145);
             this.btnSave.Margin = new System.Windows.Forms.Padding(1);
             this.btnSave.Name = "btnSave";
             // 
@@ -1137,9 +1152,9 @@ namespace PathologResultEntry
             // 
             this.btnSave.RootElement.AccessibleDescription = null;
             this.btnSave.RootElement.AccessibleName = null;
-            this.btnSave.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 118, 110, 24);
+            this.btnSave.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 118, 137, 30);
             this.btnSave.RootElement.Enabled = true;
-            this.btnSave.Size = new System.Drawing.Size(98, 29);
+            this.btnSave.Size = new System.Drawing.Size(131, 36);
             this.btnSave.TabIndex = 30;
             this.btnSave.Text = "שמירה";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -1148,7 +1163,7 @@ namespace PathologResultEntry
             // 
             this.btnAuth.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAuth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnAuth.Location = new System.Drawing.Point(3, 66);
+            this.btnAuth.Location = new System.Drawing.Point(4, 81);
             this.btnAuth.Margin = new System.Windows.Forms.Padding(1);
             this.btnAuth.Name = "btnAuth";
             // 
@@ -1156,9 +1171,9 @@ namespace PathologResultEntry
             // 
             this.btnAuth.RootElement.AccessibleDescription = null;
             this.btnAuth.RootElement.AccessibleName = null;
-            this.btnAuth.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 66, 110, 24);
+            this.btnAuth.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 66, 137, 30);
             this.btnAuth.RootElement.Enabled = true;
-            this.btnAuth.Size = new System.Drawing.Size(98, 29);
+            this.btnAuth.Size = new System.Drawing.Size(131, 36);
             this.btnAuth.TabIndex = 31;
             this.btnAuth.Text = "אישור";
             this.btnAuth.Click += new System.EventHandler(this.radButtonAuthorise_Click);
@@ -1169,7 +1184,7 @@ namespace PathologResultEntry
             this.btnLetter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnLetter.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLetter.Location = new System.Drawing.Point(3, 332);
+            this.btnLetter.Location = new System.Drawing.Point(4, 409);
             this.btnLetter.Margin = new System.Windows.Forms.Padding(1);
             this.btnLetter.Name = "btnLetter";
             // 
@@ -1177,8 +1192,8 @@ namespace PathologResultEntry
             // 
             this.btnLetter.RootElement.AccessibleDescription = null;
             this.btnLetter.RootElement.AccessibleName = null;
-            this.btnLetter.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 332, 110, 24);
-            this.btnLetter.Size = new System.Drawing.Size(98, 29);
+            this.btnLetter.RootElement.ControlBounds = new System.Drawing.Rectangle(3, 332, 137, 30);
+            this.btnLetter.Size = new System.Drawing.Size(131, 36);
             this.btnLetter.TabIndex = 38;
             this.btnLetter.Text = "מכתב תשובה";
             this.btnLetter.Click += new System.EventHandler(this.btnLetter_Click);
@@ -1187,7 +1202,7 @@ namespace PathologResultEntry
             // 
             this.BtnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.BtnExit.Location = new System.Drawing.Point(2, 448);
+            this.BtnExit.Location = new System.Drawing.Point(3, 551);
             this.BtnExit.Margin = new System.Windows.Forms.Padding(1);
             this.BtnExit.Name = "BtnExit";
             // 
@@ -1195,8 +1210,8 @@ namespace PathologResultEntry
             // 
             this.BtnExit.RootElement.AccessibleDescription = null;
             this.BtnExit.RootElement.AccessibleName = null;
-            this.BtnExit.RootElement.ControlBounds = new System.Drawing.Rectangle(2, 448, 110, 24);
-            this.BtnExit.Size = new System.Drawing.Size(98, 29);
+            this.BtnExit.RootElement.ControlBounds = new System.Drawing.Rectangle(2, 448, 137, 30);
+            this.BtnExit.Size = new System.Drawing.Size(131, 36);
             this.BtnExit.TabIndex = 32;
             this.BtnExit.Text = "יציאה";
             this.BtnExit.ThemeName = "ControlDefault";
@@ -1210,7 +1225,7 @@ namespace PathologResultEntry
             this.radButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.radButton1.Image = ((System.Drawing.Image)(resources.GetObject("radButton1.Image")));
             this.radButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radButton1.Location = new System.Drawing.Point(4, 578);
+            this.radButton1.Location = new System.Drawing.Point(5, 711);
             this.radButton1.Margin = new System.Windows.Forms.Padding(1);
             this.radButton1.Name = "radButton1";
             // 
@@ -1218,8 +1233,8 @@ namespace PathologResultEntry
             // 
             this.radButton1.RootElement.AccessibleDescription = null;
             this.radButton1.RootElement.AccessibleName = null;
-            this.radButton1.RootElement.ControlBounds = new System.Drawing.Rectangle(4, 578, 110, 24);
-            this.radButton1.Size = new System.Drawing.Size(98, 9);
+            this.radButton1.RootElement.ControlBounds = new System.Drawing.Rectangle(4, 578, 137, 30);
+            this.radButton1.Size = new System.Drawing.Size(131, 11);
             this.radButton1.TabIndex = 39;
             this.radButton1.Visible = false;
             this.radButton1.Click += new System.EventHandler(this.PrintLetter_Click);
@@ -1235,7 +1250,7 @@ namespace PathologResultEntry
             // 
             this.radButton2.RootElement.AccessibleDescription = null;
             this.radButton2.RootElement.AccessibleName = null;
-            this.radButton2.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 110, 24);
+            this.radButton2.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 137, 30);
             this.radButton2.TabIndex = 0;
             // 
             // radListControl1
@@ -1249,7 +1264,7 @@ namespace PathologResultEntry
             // 
             this.radListControl1.RootElement.AccessibleDescription = null;
             this.radListControl1.RootElement.AccessibleName = null;
-            this.radListControl1.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 120, 95);
+            this.radListControl1.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 150, 118);
             this.radListControl1.TabIndex = 0;
             // 
             // DetTab
@@ -1260,13 +1275,13 @@ namespace PathologResultEntry
             this.DetTab.Controls.Add(this.tabhistor);
             this.DetTab.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.DetTab.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.DetTab.Location = new System.Drawing.Point(3, 96);
-            this.DetTab.Margin = new System.Windows.Forms.Padding(2);
+            this.DetTab.Location = new System.Drawing.Point(4, 118);
+            this.DetTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DetTab.Name = "DetTab";
             this.DetTab.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DetTab.RightToLeftLayout = true;
             this.DetTab.SelectedIndex = 0;
-            this.DetTab.Size = new System.Drawing.Size(280, 796);
+            this.DetTab.Size = new System.Drawing.Size(373, 980);
             this.DetTab.TabIndex = 41;
             // 
             // tabPage1
@@ -1276,11 +1291,11 @@ namespace PathologResultEntry
             this.tabPage1.Controls.Add(this.pnlDetails);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.pnlTissuesTable);
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 39);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(272, 760);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(365, 937);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "פרטים";
             // 
@@ -1294,13 +1309,14 @@ namespace PathologResultEntry
             this.sampleName_col,
             this.extraMaterials_col});
             this.dataGridViewExtraMaterials.Enabled = false;
-            this.dataGridViewExtraMaterials.Location = new System.Drawing.Point(15, 469);
+            this.dataGridViewExtraMaterials.Location = new System.Drawing.Point(20, 577);
+            this.dataGridViewExtraMaterials.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewExtraMaterials.Name = "dataGridViewExtraMaterials";
             this.dataGridViewExtraMaterials.ReadOnly = true;
             this.dataGridViewExtraMaterials.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridViewExtraMaterials.RowHeadersVisible = false;
             this.dataGridViewExtraMaterials.RowHeadersWidth = 62;
-            this.dataGridViewExtraMaterials.Size = new System.Drawing.Size(246, 188);
+            this.dataGridViewExtraMaterials.Size = new System.Drawing.Size(328, 231);
             this.dataGridViewExtraMaterials.TabIndex = 38;
             this.dataGridViewExtraMaterials.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridViewExtraMaterials_DataBindingComplete);
             // 
@@ -1327,10 +1343,9 @@ namespace PathologResultEntry
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label3.Location = new System.Drawing.Point(45, 680);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(60, 837);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 13);
+            this.label3.Size = new System.Drawing.Size(184, 17);
             this.label3.TabIndex = 43;
             this.label3.Text = "מספרי חתיכות חומר בבלוק:";
             // 
@@ -1339,21 +1354,21 @@ namespace PathologResultEntry
             this.pnlTissuesTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlTissuesTable.AutoScroll = true;
             this.pnlTissuesTable.BackColor = System.Drawing.Color.Teal;
-            this.pnlTissuesTable.Location = new System.Drawing.Point(182, 702);
-            this.pnlTissuesTable.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTissuesTable.Location = new System.Drawing.Point(243, 864);
+            this.pnlTissuesTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTissuesTable.Name = "pnlTissuesTable";
             this.pnlTissuesTable.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlTissuesTable.Size = new System.Drawing.Size(64, 17);
+            this.pnlTissuesTable.Size = new System.Drawing.Size(85, 21);
             this.pnlTissuesTable.TabIndex = 41;
             // 
             // tabhistor
             // 
             this.tabhistor.AutoScroll = true;
-            this.tabhistor.Location = new System.Drawing.Point(4, 32);
-            this.tabhistor.Margin = new System.Windows.Forms.Padding(2);
+            this.tabhistor.Location = new System.Drawing.Point(4, 39);
+            this.tabhistor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabhistor.Name = "tabhistor";
-            this.tabhistor.Padding = new System.Windows.Forms.Padding(2);
-            this.tabhistor.Size = new System.Drawing.Size(272, 760);
+            this.tabhistor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabhistor.Size = new System.Drawing.Size(365, 937);
             this.tabhistor.TabIndex = 1;
             this.tabhistor.Text = "היסטוריה";
             // 
@@ -1362,13 +1377,13 @@ namespace PathologResultEntry
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 469);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 577);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(181, 143);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(241, 176);
             this.tableLayoutPanel1.TabIndex = 38;
             // 
             // tab_micro
@@ -1376,10 +1391,11 @@ namespace PathologResultEntry
             this.tab_micro.Controls.Add(this.elementHost1);
             this.tab_micro.Controls.Add(this.tableLayoutPanel1);
             this.tab_micro.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tab_micro.Location = new System.Drawing.Point(4, 32);
+            this.tab_micro.Location = new System.Drawing.Point(4, 39);
+            this.tab_micro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tab_micro.Name = "tab_micro";
-            this.tab_micro.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_micro.Size = new System.Drawing.Size(1063, 762);
+            this.tab_micro.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tab_micro.Size = new System.Drawing.Size(1420, 939);
             this.tab_micro.TabIndex = 5;
             this.tab_micro.Tag = "HIS";
             this.tab_micro.Text = "מסך פתולוג";
@@ -1389,9 +1405,10 @@ namespace PathologResultEntry
             // 
             this.elementHost1.BackColor = System.Drawing.Color.Transparent;
             this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.elementHost1.Location = new System.Drawing.Point(3, 3);
+            this.elementHost1.Location = new System.Drawing.Point(4, 4);
+            this.elementHost1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.elementHost1.Name = "elementHost1";
-            this.elementHost1.Size = new System.Drawing.Size(1057, 756);
+            this.elementHost1.Size = new System.Drawing.Size(1412, 931);
             this.elementHost1.TabIndex = 0;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.pathologDiagnosisWPF1;
@@ -1403,21 +1420,21 @@ namespace PathologResultEntry
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.tab_micro);
             this.tabControl.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.tabControl.Location = new System.Drawing.Point(278, 96);
+            this.tabControl.Location = new System.Drawing.Point(371, 118);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl.Name = "tabControl";
             this.tabControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tabControl.RightToLeftLayout = true;
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1071, 798);
+            this.tabControl.Size = new System.Drawing.Size(1428, 982);
             this.tabControl.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 42;
             this.label1.Text = "label1";
             // 
@@ -1443,7 +1460,7 @@ namespace PathologResultEntry
             // 
             // PathologResultEntryCls
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Controls.Add(this.label1);
@@ -1452,8 +1469,9 @@ namespace PathologResultEntry
             this.Controls.Add(this.DetTab);
             this.Controls.Add(this.pnlButtons);
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PathologResultEntryCls";
-            this.Size = new System.Drawing.Size(1469, 894);
+            this.Size = new System.Drawing.Size(1959, 1100);
             ((System.ComponentModel.ISupportInitialize)(this.pnlSdgDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblRev)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBarcodeName)).EndInit();

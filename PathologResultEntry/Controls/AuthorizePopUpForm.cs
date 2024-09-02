@@ -14,6 +14,7 @@ using Telerik.WinControls;
 using Telerik.WinControls.UI;
 using Telerik.WinControls.UI.Data;
 using Control = System.Windows.Forms.Control;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace PathologResultEntry.Controls
 {
@@ -53,9 +54,9 @@ namespace PathologResultEntry.Controls
                     {Constants.SnomedM, cmbSM1},
                     {Constants.Sign1St, radTextBoxSignBy1},
                     {Constants.Sign2Nd, radTextBoxSignBy2},
-                    {Constants.Malignant, cbMalig}     
+                    {Constants.Malignant, cbMalig}
                 };
-            LoadSnomedData();
+            LoadCMB();
         }
 
         internal void LoadSignatures(DataLayer dal, List<RESULT> signatures)
@@ -94,94 +95,59 @@ namespace PathologResultEntry.Controls
         }
 
 
-        private void LoadSnomedData()
-        {
-            if (_sMList == null || _sTList == null)
-            {
-                InitilaizeData1();
-            }
-            else
-            {
-                InitilaizeData2();
-            }
-        }
-
-        private Task InitilaizeData1()
+        private void LoadCMB()
         {
             InitCombo();
 
-            _sMList = SetSnomedPhrase2Combo(cmbSM1, "SNOMED M");
-            SetSnomedPhrase2Combo(cmbSM2, "SNOMED M");
+            if (_sMList == null || _sTList == null || doctors == null){ LoadCmbDataToLists(); }
 
-            _sTList = SetSnomedPhrase2Combo(cmbST1, "SNOMED T");
-            SetSnomedPhrase2Combo(cmbST2, "SNOMED T");
+            else { radRadioButtonDistribute.IsChecked = true; }
 
-            cmbSM1.ItemsSortComparer = new CustomComparer();
-            cmbSM2.ItemsSortComparer = new CustomComparer();
-            cmbST1.ItemsSortComparer = new CustomComparer();
-            cmbST2.ItemsSortComparer = new CustomComparer();
-
-            //     loggedInUserName = userName;
-
-            doctors = SetSecondSignCombo(_currentUserName);
-            radDropDownListSecondSign.BindingContext = new BindingContext();
-            radDropDownListSecondSign.DisplayMember = "operatorName";
-            radDropDownListSecondSign.ValueMember = "operatorId";
-
-            radDropDownListSecondSign.DataSource = doctors;
-            radDropDownListSecondSign.SelectedIndex = -1;
-
-            radRadioButtonDistribute.IsChecked = true;
-
-            return Task.FromResult(0);
+            LoadSnomedListToCmb();
+            
+            LoadDoctorslistToCmb();
         }
-
-        private Task InitilaizeData2()
-        {
-            radRadioButtonDistribute.IsChecked = true;
-
-            return Task.FromResult(0);
-        }
-
-        private List<PHRASE_ENTRY> SetSnomedPhrase2Combo(RadDropDownList comboBox, string phraseName)
-        {
-            try
-            {
-                List<PHRASE_ENTRY> list = _dal.GetPhraseEntries(phraseName).Where(pe => pe.PHRASE_NAME != null && !pe.PHRASE_NAME.Substring(0, 1).Equals("D")).ToList();
-
-                SetExistsSnomedList2Combo(comboBox, list);
-                return list;
-            }
-            catch (Exception e)
-            {
-                Logger.WriteLogFile(e); MessageBox.Show("Error in load " + phraseName + " Phrase " + e.Message, Constants.MboxCaption, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-
-        }
-
         private void SetExistsSnomedList2Combo(RadDropDownList comboBox, List<PHRASE_ENTRY> list)
         {
-            if (list == null)
-                return;
+            if (list == null) return;
 
             comboBox.DisplayMember = "PHRASE_DESCRIPTION";
             comboBox.ValueMember = "PHRASE_NAME";
 
             comboBox.DataSource = list;
         }
-
-        private List<DigitPatholog> SetSecondSignCombo(string userName)
+        private void LoadDoctorslistToCmb()
         {
-            //return dal.FindBy<PHRASE_HEADER>(ph => ph.NAME.ToLower().Equals("sign by")).FirstOrDefault().PHRASE_ENTRY.Where(pe => pe.PHRASE_DESCRIPTION != userName).ToList();
 
-            var q = from op in _dal.GetAll<OPERATOR_USER>()
-                    where op.U_IS_DIGITAL_PATHOLOG == "T" && op.OPERATOR.NAME != userName
-                    select new DigitPatholog { operatorId = op.OPERATOR_ID, operatorName = op.OPERATOR.FULL_NAME };//op.U_DEGREE + " " + op.OPERATOR.FULL_NAME, Degree = op.U_DEGREE
+            radDropDownListSecondSign.DisplayMember = "operatorName";
+            radDropDownListSecondSign.ValueMember = "operatorId";
 
-            return q.ToList();
-            //     return dal.FindBy<OPERATOR_USER>(op => op.U_IS_DIGITAL_PATHOLOG == "T" & op.OPERATOR.NAME != userName).ToList();
+            radDropDownListSecondSign.DataSource = doctors;
         }
+
+        private void LoadSnomedListToCmb()
+        {
+
+            SetExistsSnomedList2Combo(cmbST1, _sTList);
+            SetExistsSnomedList2Combo(cmbST2, _sTList);
+            SetExistsSnomedList2Combo(cmbSM1, _sMList);
+            SetExistsSnomedList2Combo(cmbSM2, _sMList);
+
+            cmbSM1.ItemsSortComparer = new CustomComparer();
+            cmbSM2.ItemsSortComparer = new CustomComparer();
+            cmbST1.ItemsSortComparer = new CustomComparer();
+            cmbST2.ItemsSortComparer = new CustomComparer();
+        }
+
+        private  void LoadCmbDataToLists()
+        {
+            /////////////////////////////////////////////////////
+            _sMList = _dal.FindBy<PHRASE_ENTRY>(x => x.PHRASE_ID == 703 && !x.PHRASE_NAME.Substring(0, 1).Equals("D")).ToList();
+            _sTList = _dal.FindBy<PHRASE_ENTRY>(x => x.PHRASE_ID == 704 && !x.PHRASE_NAME.Substring(0, 1).Equals("D")).ToList();
+            doctors = _dal.FindBy<OPERATOR_USER>(x => x.U_IS_DIGITAL_PATHOLOG == "T" && x.OPERATOR.NAME != _currentUserName).ToList().Select(x => new DigitPatholog { operatorId = x.OPERATOR_ID, operatorName = x.OPERATOR.FULL_NAME }).ToList();
+        }
+
+ 
 
         void InitCombo()
         {
@@ -222,18 +188,7 @@ namespace PathologResultEntry.Controls
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            //cmbST1.SelectedValue = null;
-            //cmbST2.SelectedValue = null;
-            //cmbSM1.SelectedValue = null;
-            //cmbSM2.SelectedValue = null;
-            //radTextBoxSignBy1.Text = null;
-            //radTextBoxSignBy2.Text = null;
-            //radRadioButtonSendToSecondSign.IsChecked = false;
-            //radRadioButtonDistribute.IsChecked = true;
-            //cbMalig.IsChecked = false;
-            //radDropDownListSecondSign.SelectedValue = null;
             this.Close();
-
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
@@ -267,26 +222,16 @@ namespace PathologResultEntry.Controls
             return errMsg;
         }
 
+
+
         private void canAuthoriseSnomedT(ref string errMsg)
         {
-            var ds = cmbST1.DataSource as List<PHRASE_ENTRY>;
-            PHRASE_ENTRY pe = ds.FirstOrDefault(x => x.PHRASE_DESCRIPTION == cmbST1.Text);
-
-            if (pe == null)
-            {
-                errMsg += "First snomed T is mandatory field." + Environment.NewLine;
-            }
+            if(cmbST1.SelectedItem == null) errMsg += "First snomed T is mandatory field." + Environment.NewLine;
         }
 
         private void canAuthoriseSnomedM(ref string errMsg)
         {
-            var ds = cmbSM1.DataSource as List<PHRASE_ENTRY>;
-            PHRASE_ENTRY pe = ds.FirstOrDefault(x => x.PHRASE_DESCRIPTION == cmbSM1.Text);
-
-            if (pe == null)
-            {
-                errMsg += "First snomed M is mandatory field.";
-            }
+            if(cmbSM1.SelectedItem == null) errMsg += "First snomed M is mandatory field." + Environment.NewLine;
         }
 
         private void candAuthoriseStatus(ref string errMsg)
@@ -523,10 +468,10 @@ namespace PathologResultEntry.Controls
 
         internal void EmptyAllCombos()
         {
-            cmbST1.Text = string.Empty;
-            cmbST2.Text = string.Empty;
-            cmbSM1.Text = string.Empty;
-            cmbSM2.Text = string.Empty;
+            cmbST1.SelectedItem = null;
+            cmbST2.SelectedItem = null;
+            cmbSM1.SelectedItem = null;
+            cmbSM2.SelectedItem = null;
         }
 
         internal void LoadSnomedResults(List<WrapperRtf> currentResults)
@@ -620,7 +565,6 @@ namespace PathologResultEntry.Controls
         internal void LoadSdgDetails(SDG sdg)
         {
             this._sdg = sdg;
-
         }
 
         internal void EnableControls(bool p)

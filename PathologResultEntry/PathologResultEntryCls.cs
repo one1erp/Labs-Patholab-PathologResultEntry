@@ -135,9 +135,9 @@ namespace PathologResultEntry
             _SessionId = (long)_ntlsCon.GetSessionId();
             _currentUserid = (long)_ntlsUser.GetOperatorId();
 
-            var q = (from item in dal.FindBy<OPERATOR>(op => op.OPERATOR_ID == _currentUserid) select new { item.FULL_NAME }).FirstOrDefault();
-            _currentUserFullName = q.FULL_NAME;
-
+            _currentUserFullName = dal.FindBy<OPERATOR>(op => op.OPERATOR_ID == _currentUserid)
+                                     .Select(op => op.FULL_NAME)
+                                     .FirstOrDefault();
 
             this.pathologDiagnosisWPF1.init(_ntlsCon);
             opToChangeAssociation = dal.GetPhraseByName("PermissionsChangeGatholog").PHRASE_ENTRY.ToList();
@@ -312,6 +312,8 @@ namespace PathologResultEntry
         {
             this._dal = dal;
             txtBarcodeName.Text = sdgName;
+
+
             LoadSdg();
             pathologDiagnosisWPF1.loadSdg(sdgName);
 
@@ -413,23 +415,21 @@ namespace PathologResultEntry
 
         private void FirstFocus()
         {
-            //First focus because nautius's bag
-            _timerFocus = new Timer { Interval = 20000 };
-            _timerFocus.Tick += timerFocus_Tick;
-            _timerFocus.Start();
-            txtBarcodeName.Focus();
-
-
-        }
-
-        void timerFocus_Tick(object sender, EventArgs e)
-        {
-            txtBarcodeName.Focus();
-            _timerFocus.Stop();
-            //SaveRequest();
+            ////First focus because nautius's bag
+            //_timerFocus = new Timer { Interval = 20000 };
+            //_timerFocus.Tick += timerFocus_Tick;
             //_timerFocus.Start();
-            //_timerFocus.Dispose();
+            txtBarcodeName.Focus();
         }
+
+        //void timerFocus_Tick(object sender, EventArgs e)
+        //{
+        //    txtBarcodeName.Focus();
+        //    _timerFocus.Stop();
+        //    //SaveRequest();
+        //    //_timerFocus.Start();
+        //    //_timerFocus.Dispose();
+        //}
         #endregion
 
 
@@ -1531,7 +1531,6 @@ namespace PathologResultEntry
         {
             if (_AuthorizePopUpForm == null)
             {
-
                 _AuthorizePopUpForm = new AuthorizePopUpForm(_SessionId, _currentUserName, _dal);
             }
 

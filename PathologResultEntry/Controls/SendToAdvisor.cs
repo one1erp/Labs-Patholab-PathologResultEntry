@@ -30,7 +30,7 @@ namespace PathologResultEntry.Controls
         private Dictionary<string, bool> canSendToAdvisor;
         private Dictionary<string, string> exrqstatusList;
         public List<AdviseRequest> ListAdviseRequests;
-        public SDG_DETAILS sdgDetails;
+        //public SDG_DETAILS sdgDetails;
         long _SessionId;
         private INautilusDBConnection _ntlsCon;
 
