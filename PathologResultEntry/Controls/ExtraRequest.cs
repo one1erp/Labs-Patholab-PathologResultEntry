@@ -311,8 +311,9 @@ namespace PathologResultEntry.Controls
 
                 }
 
-
-                _dal.InsertToSdgLog(_sdg.SDG_ID, "Extra Request", sid, "Extra request for " + created_by_field);
+                //DON'T CHANGE THE logDesc, IT'S BEEING USEDIN EXTRA_SLIDES VIEW
+                string logDesc = $"block: {blockAliqParent.NAME} color type: {_dal.GetPartType(color)} Extra request for {created_by_field}";
+                _dal.InsertToSdgLog(_sdg.SDG_ID, "Extra Request", sid, logDesc);
                 _dal.SaveChanges();
             }
         }

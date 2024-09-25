@@ -611,7 +611,7 @@ namespace PathologResultEntry
 
                 sdg.SAMPLEs.OrderBy(s => s.NAME).Foreach(samp =>
                 {
-                    if (samp.SAMPLE_USER.U_ARCHIVE != null && samp.SAMPLE_USER.U_ARCHIVE.Equals("T"))
+                    if (samp.SAMPLE_USER.U_MATERIAL != null && samp.SAMPLE_USER.U_MATERIAL.Equals("T"))
                         list.Add(new ExtraMaterials(samp.NAME, good));
                     else
                         list.Add(new ExtraMaterials(samp.NAME, bad));
