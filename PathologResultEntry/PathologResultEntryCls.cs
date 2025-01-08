@@ -130,8 +130,9 @@ namespace PathologResultEntry
 
             _ntlsCon = Utils.GetNtlsCon(_sp);
             _ntlsUser = Utils.GetNautilusUser(_sp);
+ 
             btnMngr.Visible = _ntlsUser.GetRoleName().ToUpper() == "SYSTEM";
-            _currentUserName = _ntlsUser.GetOperatorName();
+            _currentUserName = _ntlsUser == null ? _ntlsUser.GetOperatorName(): "1";
             _SessionId = (long)_ntlsCon.GetSessionId();
             _currentUserid = (long)_ntlsUser.GetOperatorId();
 
@@ -339,12 +340,8 @@ namespace PathologResultEntry
 
         public void Init()
         {
-            Logger.WriteLogFile("PathologResultEntry.init");
-            Logger.WriteLogFile("b4 new DataLayer()");
+            Logger.WriteInfoToLog("PathologResultEntry.init");
             _dal = new DataLayer();
-            Logger.WriteLogFile("after new DataLayer()");
-
-
 
             if (DEBUG)
             {
@@ -352,17 +349,13 @@ namespace PathologResultEntry
                 txtBarcodeName.Text = "P000003/18";
             }
             else { _dal.Connect(_ntlsCon); }
-            Logger.WriteLogFile("after _dal.Connect()");
 
             InitilaizeData();
             InitSdgAttachments();
 
             InitilaizeRichSpellCtrl();
             txtBarcodeName.GotFocus += (s, e) => zLang.English();
-            //setSnomed();
 
-            ////Avigail added 12/02/24
-            //historyCtl = new HistoryCtl();
             historyCtl.ItemSelected += historyCtl_ItemSelected;
 
             SartBckgrTimer();

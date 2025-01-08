@@ -128,10 +128,15 @@ namespace PathologResultEntry.Controls
         private void LoadSnomedListToCmb()
         {
 
-            SetExistsSnomedList2Combo(cmbST1, _sTList);
-            SetExistsSnomedList2Combo(cmbST2, _sTList);
-            SetExistsSnomedList2Combo(cmbSM1, _sMList);
-            SetExistsSnomedList2Combo(cmbSM2, _sMList);
+            SetExistsSnomedList2Combo(cmbST1, new List<PHRASE_ENTRY>(_sTList));
+            SetExistsSnomedList2Combo(cmbST2, new List<PHRASE_ENTRY>(_sTList));
+            SetExistsSnomedList2Combo(cmbSM1, new List<PHRASE_ENTRY>(_sMList));
+            SetExistsSnomedList2Combo(cmbSM2, new List<PHRASE_ENTRY>(_sMList));
+
+            cmbST1.SelectedIndex = -1;
+            cmbST2.SelectedIndex = -1;
+            cmbSM1.SelectedIndex = -1;
+            cmbSM2.SelectedIndex = -1;
 
             cmbSM1.ItemsSortComparer = new CustomComparer();
             cmbSM2.ItemsSortComparer = new CustomComparer();
@@ -146,8 +151,6 @@ namespace PathologResultEntry.Controls
             _sTList = _dal.FindBy<PHRASE_ENTRY>(x => x.PHRASE_ID == 704 && !x.PHRASE_NAME.Substring(0, 1).Equals("D")).ToList();
             doctors = _dal.FindBy<OPERATOR_USER>(x => x.U_IS_DIGITAL_PATHOLOG == "T" && x.OPERATOR.NAME != _currentUserName).ToList().Select(x => new DigitPatholog { operatorId = x.OPERATOR_ID, operatorName = x.OPERATOR.FULL_NAME }).ToList();
         }
-
- 
 
         void InitCombo()
         {
